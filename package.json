@@ -2,9 +2,9 @@
   "name": "lococo",
   "version": "0.0.1",
   "description": "lococo is a desktop app to write i18n document",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "electron ."
   },
   "repository": {
     "type": "git",
@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/ocowchun/lococo/issues"
   },
-  "homepage": "https://github.com/ocowchun/lococo#readme"
+  "homepage": "https://github.com/ocowchun/lococo#readme",
+  "devDependencies": {
+    "electron-prebuilt": "^1.2.0"
+  }
 }
