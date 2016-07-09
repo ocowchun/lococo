@@ -1,0 +1,22 @@
+{
+  "name": "lococo",
+  "version": "0.0.1",
+  "description": "lococo is a desktop app to write i18n document",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ocowchun/lococo.git"
+  },
+  "keywords": [
+    "i18n"
+  ],
+  "author": "ocowchun <ocowchun@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ocowchun/lococo/issues"
+  },
+  "homepage": "https://github.com/ocowchun/lococo#readme"
+}
