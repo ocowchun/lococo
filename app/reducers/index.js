@@ -1,10 +1,10 @@
 import { combineReducers } from 'redux';
 import counter from './counter';
-import file from './file';
+import files from './file';
 
 const rootReducer = combineReducers({
   counter,
-  file
+  files
 });
 
 export default rootReducer;

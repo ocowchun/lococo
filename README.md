@@ -4,4 +4,8 @@
 ## lococo is a bear!
 
 
+##todo
+* write mockup with UI flow
+
+
 MIT

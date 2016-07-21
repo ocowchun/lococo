@@ -4,13 +4,19 @@ import { connect } from 'react-redux'
 const {dialog} = require('electron').remote;
 const {ipcRenderer} = require('electron');
 import * as Actions from '../actions'
+import FilesPage from '../components/FilesPage'
+
 
 class App extends Component {
   componentWillMount() {
-    const pong = this.props.actions.pong;
-    ipcRenderer.on('asynchronous-reply', (event, arg) => {
-      console.log(arg); // prints "pong"
-      pong();
+    const receiveFiles = this.props.actions.receiveFiles;
+    // ipcRenderer.on('asynchronous-reply', (event, arg) => {
+    //   console.log(arg); // prints "pong"
+    //   pong();
+    // });
+
+    ipcRenderer.on('receiveFiles', (event, message) => {
+      receiveFiles(message); // Prints "whoooooooh!"
     });
   }
   openFile() {
@@ -18,13 +24,19 @@ class App extends Component {
     ping();
   }
   render() {
-    console.log(this.props.todos)
     return (
       <div>
         hello world!
         <button onClick={this.openFile.bind(this)}>click</button>
+        {this.renderPages()}
       </div>
     );
+  }
+
+  renderPages(){
+    let files=this.props.files;
+
+return <FilesPage files={files} />;
   }
 }
 
@@ -33,10 +45,13 @@ App.propTypes = {
 }
 
 function mapStateToProps(state) {
-  // return state;
-  return {
-    todos: state
-  }
+console.log("====state===")
+
+console.log(state)
+  return state;
+  // return {
+  //   todos: state
+  // }
 }
 
 function mapDispatchToProps(dispatch) {

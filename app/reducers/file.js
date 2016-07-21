@@ -1,4 +1,4 @@
-import { PING_MESSAGE,PONG_MESSAGE } from '../actions/file';
+import { PING_MESSAGE,RECEIVE_FILES } from '../actions/file';
 
 function initState(){
   return [];
@@ -6,10 +6,9 @@ function initState(){
 
 export default function counter(state = initState(), action) {
   switch (action.type) {
-    case PING_MESSAGE:
-      return state.concat('ping');
-    case PONG_MESSAGE:
-      return state.concat('pong');
+    case RECEIVE_FILES:
+console.log('reducer RECEIVE_FILES');
+      return state.concat(action.files);
     default:
       return state;
   }

@@ -70,6 +70,6 @@ ipcMain.on('asynchronous-message', (event, arg) => {
       }]).popup(mainWindow);
     });
   }
-  buildMenu(menu);
+  buildMenu(menu,mainWindow);
 
 });
