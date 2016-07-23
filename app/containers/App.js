@@ -35,8 +35,9 @@ class App extends Component {
 
   renderPages(){
     let files=this.props.files;
-
-return <FilesPage files={files} />;
+    const actions = this.props.actions;
+console.log(actions)
+return <FilesPage files={files} actions={actions} />;
   }
 }
 
@@ -55,6 +56,9 @@ console.log(state)
 }
 
 function mapDispatchToProps(dispatch) {
+  console.log("Actions")
+
+  console.log(Actions)
   // return {
   //   actions: [1, 2, 3]
   // };

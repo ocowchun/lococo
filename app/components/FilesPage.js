@@ -10,14 +10,24 @@ export default class FilesPage extends Component {
     );
   }
 
-  renderFiles(){
-    let files=this.props.files;
-    if(files.length===0){
+  renderFiles() {
+    let files = this.props.files;
+    let renderFileItem = this.renderFileItem;
+    let clickFile=this.clickFile.bind(this);
+    if (files.length === 0) {
       return (<p>No files</p>)
+    } else {
+      return files.map(file => renderFileItem(file,clickFile))
     }
-    else{
-      return files.map(file=><p key={file}>{file}</p>)
-    }
+  }
+
+  renderFileItem(file,clickFile) {
+    return (<a key={file} onClick={()=>clickFile(file)}>{file}</a>);
+  }
+
+  clickFile(file){
+    const clickFile = this.props.actions.clickFile;
+clickFile(file);
   }
 }
 
