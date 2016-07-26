@@ -5,8 +5,15 @@
 
 
 ##todo
+* handle cancel when open files
 *  顯示 item 的根目錄(lococo/lib/fileManager.js)
 * write mockup with UI flow
 https://github.com/nodeca/js-yaml
 
+
+##backend
+use flux arichecture
+
+
+http://reactdesktop.js.org/
 MIT

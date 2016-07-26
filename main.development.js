@@ -1,6 +1,12 @@
-import { app, BrowserWindow, Menu, shell,ipcMain } from 'electron';
+import {
+  app,
+  BrowserWindow,
+  Menu,
+  shell,
+  ipcMain
+} from 'electron';
 import buildMenu from './lib/menu';
-
+let mainWindowManagerFactory = require('./lib/mainWindowManagerFactory.js');
 let menu;
 let template;
 let mainWindow = null;
@@ -16,7 +22,7 @@ app.on('window-all-closed', () => {
 });
 
 
-const installExtensions = async () => {
+const installExtensions = async() => {
   if (process.env.NODE_ENV === 'development') {
     const installer = require('electron-devtools-installer'); // eslint-disable-line global-require
     const extensions = [
@@ -32,13 +38,13 @@ const installExtensions = async () => {
   }
 };
 
-app.on('ready', async () => {
+app.on('ready', async() => {
   await installExtensions();
 
-ipcMain.on('asynchronous-message', (event, arg) => {
-  console.log(arg);  // prints "ping"
-  event.sender.send('asynchronous-reply', 'pong');
-});
+  ipcMain.on('asynchronous-message', (event, arg) => {
+    console.log(arg); // prints "ping"
+    event.sender.send('asynchronous-reply', 'pong');
+  });
 
   mainWindow = new BrowserWindow({
     show: false,
@@ -53,6 +59,8 @@ ipcMain.on('asynchronous-message', (event, arg) => {
     mainWindow.focus();
   });
 
+  mainWindowManagerFactory(mainWindow);
+
   mainWindow.on('closed', () => {
     mainWindow = null;
   });
@@ -60,7 +68,10 @@ ipcMain.on('asynchronous-message', (event, arg) => {
   if (process.env.NODE_ENV === 'development') {
     mainWindow.openDevTools();
     mainWindow.webContents.on('context-menu', (e, props) => {
-      const { x, y } = props;
+      const {
+        x,
+        y
+      } = props;
 
       Menu.buildFromTemplate([{
         label: 'Inspect element',
@@ -70,6 +81,6 @@ ipcMain.on('asynchronous-message', (event, arg) => {
       }]).popup(mainWindow);
     });
   }
-  buildMenu(menu,mainWindow);
+  buildMenu(menu, mainWindow);
 
 });
