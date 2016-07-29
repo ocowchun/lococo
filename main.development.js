@@ -7,6 +7,8 @@ import {
 } from 'electron';
 import buildMenu from './lib/menu';
 let mainWindowManagerFactory = require('./lib/mainWindowManagerFactory.js');
+require('./lib/ipcManager.js');
+
 let menu;
 let template;
 let mainWindow = null;

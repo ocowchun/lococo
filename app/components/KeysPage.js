@@ -1,16 +1,16 @@
 import React, {  Component,  PropTypes} from 'react';
 
-export default class FilesPage extends Component {
+export default class KeysPage extends Component {
   render() {
     // console.log(this.props.todos)
     return (
       <div>
-{this.renderFiles()}
+{this.renderKeys()}
       </div>
     );
   }
 
-  renderFiles() {
+  renderKeys() {
     let dir=this.props.files.dir;
     let dictionaries = this.props.files.dictionaries;
     let renderFileItem = this.renderFileItem;

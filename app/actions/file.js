@@ -2,7 +2,9 @@ const {  ipcRenderer} = require('electron');
 export const PING_MESSAGE = 'PING_MESSAGE';
 export const PONG_MESSAGE = 'PONG_MESSAGE';
 export const RECEIVE_FILES = 'RECEIVE_FILES';
+export const CLICK_DICTIONARY = 'CLICK_DICTIONARY';
 export const CLICK_FILE = 'CLICK_FILE';
+export const RECEIVE_KEYS = 'RECEIVE_KEYS';
 
 export function ping() {
   ipcRenderer.send('asynchronous-message', 'ping');
@@ -18,10 +20,30 @@ export function pong() {
   };
 }
 
-export function receiveFiles(files) {
+export function receiveFiles(data) {
+  let {dictionaries,dir}=data;
   return {
     type: RECEIVE_FILES,
-    files:files
+    dictionaries:dictionaries,
+    dir:dir
+  };
+}
+
+export function receiveKeys(data) {
+  let {keys}=data;
+  return {
+    type: RECEIVE_KEYS,
+    keys:keys
+  };
+}
+
+
+export function clickDictionary(dic) {
+  console.log('@@')
+  ipcRenderer.send('clickDictionary', dic);
+  return {
+    type: CLICK_DICTIONARY,
+    dic:dic
   };
 }
 

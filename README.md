@@ -3,6 +3,12 @@
 
 ## lococo is a bear!
 
+##Run
+```bash
+$ npm run hot-server
+$ npm run start-hot
+```
+
 
 ##todo
 * handle cancel when open files
