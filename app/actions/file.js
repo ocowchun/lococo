@@ -30,10 +30,12 @@ export function receiveFiles(data) {
 }
 
 export function receiveKeys(data) {
-  let {keys}=data;
+  let {keys,currentDictionary,currentDir}=data;
   return {
     type: RECEIVE_KEYS,
-    keys:keys
+    keys:keys,
+    currentDictionary:currentDictionary,
+    currentDir:currentDir
   };
 }
 

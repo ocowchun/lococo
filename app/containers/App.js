@@ -15,7 +15,8 @@ const {
   ipcRenderer
 } = require('electron');
 import * as Actions from '../actions'
-import FilesPage from '../components/FilesPage'
+import DictionaryIndexPage from '../components/DictionaryIndexPage'
+import DictionaryPage from '../components/DictionaryPage'
 
 
 class App extends Component {
@@ -54,9 +55,18 @@ class App extends Component {
 
   renderPages() {
     let files = this.props.files;
+    let dictionary = this.props.dictionary;
     const actions = this.props.actions;
-    console.log(actions)
-    return <FilesPage files={files} actions={actions} />;
+    const currentRoute = this.props.route.currentRoute;
+    let pages = {}
+    pages['main'] = () => <DictionaryIndexPage dictionary={dictionary} actions={actions} />
+    pages['dictionaryShow'] = () => <DictionaryPage dictionary={dictionary} actions={actions} />
+
+    if (pages[currentRoute]) {
+      return pages[currentRoute]()
+    } else {
+      return pages['main']();
+    }
   }
 }
 
@@ -65,16 +75,14 @@ App.propTypes = {
 }
 
 function mapStateToProps(state) {
-  console.log("====state===") {
-    keys: state.file.keys,
-    dictionaries: state.file.dictionaries,
-    dir: state.file.dir
-  }
+  console.log("====state===")
   console.log(state)
   return state;
-  // return {
-  //   todos: state
-  // }
+// let {dir,files,dictionaries,keys,currentDictionaryDir,currentDictionary}=state.files
+
+// let props={dir,files,dictionaries,keys,currentDictionaryDir,currentDictionary}
+
+//   return props;
 }
 
 function mapDispatchToProps(dispatch) {

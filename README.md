@@ -11,6 +11,7 @@ $ npm run start-hot
 
 
 ##todo
+* mockup dictionary view(dicName,keys,values....)
 * handle cancel when open files
 *  顯示 item 的根目錄(lococo/lib/fileManager.js)
 * write mockup with UI flow
