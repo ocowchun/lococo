@@ -5,7 +5,8 @@ var config = {};
 // /Users/ocowchun/projects/github/lococo/example/config/locales/app.en.yml
 
 Dictionary.loadDictionary(files, config).then(function(dictionary) {
-	dictionary.listKeys('');
+	var result=dictionary.listKeys('');
+	console.log(result)
 })
 
 // console.log(files)
