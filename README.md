@@ -3,14 +3,13 @@
 
 ## lococo is a bear!
 
-##Run
+## Run
 ```bash
 $ npm run hot-server
 $ npm run start-hot
 ```
 
-
-##todo
+## todo
 * mockup dictionary view(dicName,keys,values....)
 * handle cancel when open files
 *  顯示 item 的根目錄(lococo/lib/fileManager.js)
@@ -18,9 +17,10 @@ $ npm run start-hot
 https://github.com/nodeca/js-yaml
 
 
-##backend
+## backend
 use flux arichecture
 
-
+## UI
 http://reactdesktop.js.org/
+
 MIT
