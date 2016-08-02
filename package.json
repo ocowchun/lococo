@@ -40,6 +40,7 @@
     "babel-register": "^6.9.0",
     "chai": "^3.5.0",
     "co-mocha": "^1.1.2",
+    "commander": "^2.9.0",
     "concurrently": "^2.1.0",
     "cross-env": "^1.0.8",
     "css-loader": "^0.23.1",
