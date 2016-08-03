@@ -2,7 +2,7 @@ import React, {  Component,  PropTypes} from 'react';
 
 export default class DictionaryPage extends Component {
   render() {
-    // console.log(this.props.todos)
+    
     return (
       <div>
 <h2>DictionaryPage</h2>

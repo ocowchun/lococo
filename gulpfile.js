@@ -6,3 +6,7 @@ gulp.task('sass', function() {
   			.pipe(sass().on('error', sass.logError))
   			.pipe(gulp.dest('./dist'));
 });
+
+gulp.task('watch', function() {
+  gulp.watch(['src/**/*scss'], ['sass']);
+})

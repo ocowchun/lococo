@@ -3,7 +3,7 @@
 var program = require('commander');
 var fs = require('fs');
 var chalk = require('chalk')
-var template = require('../template.js');
+var template = require('./template.js');
 
 function createComponent(filename) {
   console.log(chalk.green('[INFO] ') + 'create component...');  

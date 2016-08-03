@@ -17,6 +17,9 @@ const {
 import * as Actions from '../actions'
 import DictionaryIndexPage from '../components/DictionaryIndexPage'
 import DictionaryPage from '../components/DictionaryPage'
+import Menu from '../components/Menu';
+
+require('../../dist/index.css');
 
 
 class App extends Component {
@@ -24,19 +27,15 @@ class App extends Component {
     const receiveFiles = this.props.actions.receiveFiles;
     const receiveKeys = this.props.actions.receiveKeys;
 
-    // ipcRenderer.on('asynchronous-reply', (event, arg) => {
-    //   console.log(arg); // prints "pong"
-    //   pong();
-    // });
     ipcRenderer.on('receiveKeys', (event, data) => {
       console.log('ipc receiveKeys')
       console.log(data);
-      receiveKeys(data); // Prints "whoooooooh!"
+      receiveKeys(data);
     });
 
     ipcRenderer.on('receiveFiles', (event, data) => {
       console.log('ipc receiveFiles')
-      receiveFiles(data); // Prints "whoooooooh!"
+      receiveFiles(data);
     });
   }
   openFile() {
@@ -44,11 +43,17 @@ class App extends Component {
     ping();
   }
   render() {
+    
     return (
-      <div>
-        hello world!
-        <button onClick={this.openFile.bind(this)}>click</button>
-        {this.renderPages()}
+      <div className="MainContent">
+        <Menu
+          {...this.props}
+        />
+        <div className="container menu-offset">
+          hello world!
+          <button onClick={this.openFile.bind(this)}>click</button>
+          {this.renderPages()}
+        </div>
       </div>
     );
   }

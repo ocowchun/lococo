@@ -1,2 +1,19 @@
 @import "../bower_components/sexy/src/normalize";
 @import "../bower_components/sexy/src/components/mixins/index";
+@import "./_menu.scss";
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+	width: 90%;
+	max-width: 1280px;
+
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.menu-offset {
+	padding-left: 300px;
+}
