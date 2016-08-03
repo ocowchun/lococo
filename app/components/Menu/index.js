@@ -1,5 +1,7 @@
 import React from 'react';
 
+import MenuItem from '../MenuItem/index.js';
+
 const propTypes = {
 
 };
@@ -15,12 +17,14 @@ export default class Navbar extends React.Component {
   
   constructor(props) {
     super(props);
+    
   }
 
   componentDidMount() {
-  	console.group("Menu details");
-    console.log(this.props);
-    console.groupEnd();
+  }
+
+  handleClick() {
+
   }
 
   renderEmpty() {
@@ -29,13 +33,21 @@ export default class Navbar extends React.Component {
   }
 
   renderMenuItems() {
-    const { dictionary } = this.props;
+    const { dictionary, actions } = this.props;
     const isDictionaryEmpty = dictionary.dictionaries.length === 0;
     const uuid = generateSimpleKey;
 
     if(isDictionaryEmpty) { return this.renderEmpty() }
 
-    return dictionary.dictionaries.map(dic => <li key={uuid()}>{dic}</li>);
+    return dictionary.dictionaries.map(dic => {
+      return (
+        <MenuItem
+          key={uuid()}
+          dictionaryName={dic}
+          {...this.props}
+        />
+      );
+    });
   }
 
   render() {

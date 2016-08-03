@@ -24,8 +24,8 @@ export function receiveFiles(data) {
   let {dictionaries,dir}=data;
   return {
     type: RECEIVE_FILES,
-    dictionaries:dictionaries,
-    dir:dir
+    dictionaries,
+    dir
   };
 }
 
@@ -33,9 +33,9 @@ export function receiveKeys(data) {
   let {keys,currentDictionary,currentDir}=data;
   return {
     type: RECEIVE_KEYS,
-    keys:keys,
-    currentDictionary:currentDictionary,
-    currentDir:currentDir
+    keys,
+    currentDictionary,
+    currentDir
   };
 }
 

@@ -91,12 +91,7 @@ function mapStateToProps(state) {
 }
 
 function mapDispatchToProps(dispatch) {
-  console.log("Actions")
-
-  console.log(Actions)
-    // return {
-    //   actions: [1, 2, 3]
-    // };
+  
   return {
     actions: bindActionCreators(Actions, dispatch)
   }
