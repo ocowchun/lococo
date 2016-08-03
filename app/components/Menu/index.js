@@ -1,9 +1,17 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 
 import MenuItem from '../MenuItem/index.js';
 
 const propTypes = {
-
+  actions: PropTypes.object.isRequired,
+  dictionary: PropTypes.shape({
+    current: PropTypes.string.isRequired,
+    currentDir: PropTypes.string.isRequired,
+    dictionaries: PropTypes.array.isRequired,
+    keys: PropTypes.array.isRequired,
+  }),
+  files: PropTypes.object.isRequired,
+  route: PropTypes.object.isRequired
 };
 
 function generateSimpleKey() {
@@ -60,3 +68,5 @@ export default class Navbar extends React.Component {
     );
   }
 }
+
+Navbar.propTypes = propTypes;

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 import Style from './style.scss';
 
 import MenuItemChild from '../MenuItemChild/index.js';
@@ -11,6 +11,10 @@ function generateSimpleKey() {
 }
 
 const uuid = generateSimpleKey;
+
+const propTypes = {
+  
+}
 
 export default class MenuItem extends React.Component {
   
@@ -27,15 +31,22 @@ export default class MenuItem extends React.Component {
     const { dictionaries, keys } = this.props.dictionary;
     const isChildEmpty           = keys.length === 0;
 
+    const { clickDictionary } = this.props.actions;
+
     if(isChildEmpty) { return ''; }
 
     // 這裡的 key 並非代表 uuid 的 key，而是 i18n 的 key。
     return keys.map((dicKey) => {
     	return (
-    	<MenuItemChild key={uuid()} isDir={dicKey.isDir}>
-    		{dicKey.key}
-    	</MenuItemChild>
-    	)
+    		<ul>
+		    	<MenuItemChild 
+		    	  key={uuid()}
+		    	  keyName={dicKey.key}
+		    	  isDir={dicKey.isDir}
+		    	  clickDictionary={clickDictionary}
+		    	/>
+		    </ul>
+    	);
     });
 
   }
