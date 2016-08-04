@@ -1,4 +1,5 @@
-const {  ipcRenderer} = require('electron');
+const { ipcRenderer } = require('electron');
+
 export const PING_MESSAGE = 'PING_MESSAGE';
 export const PONG_MESSAGE = 'PONG_MESSAGE';
 export const RECEIVE_FILES = 'RECEIVE_FILES';

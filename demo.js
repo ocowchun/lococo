@@ -6,8 +6,9 @@ var config = {};
 
 Dictionary.loadDictionary(files, config).then(function(dictionary) {
 	var result= dictionary.listKeys('controller.home');
+
 	console.log(dictionary.listValueLocales('controller.home.index'));
-	console.log(result)
+	console.log(result);
 })
 
 // console.log(files)
