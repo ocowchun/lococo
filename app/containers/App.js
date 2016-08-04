@@ -38,10 +38,17 @@ class App extends Component {
       receiveFiles(data);
     });
   }
+
+  componentDidUpdate() {
+    this.props.actions.readWord('controller.index.home');
+    this.props.actions.readWordGroup('controller.index.home');
+  }
+
   openFile() {
     const ping = this.props.actions.ping;
     ping();
   }
+
   render() {
     
     return (

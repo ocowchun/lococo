@@ -1,5 +1,5 @@
 var _=require('underscore');
-import { PING_MESSAGE,RECEIVE_FILES,RECEIVE_KEYS } from '../actions/file';
+import { PING_MESSAGE, RECEIVE_FILES, RECEIVE_KEYS } from '../actions/file';
 
 function initState() {
   return {
@@ -10,7 +10,7 @@ function initState() {
   };
 }
 
-export default function counter(state = initState(), action) {
+export default function dictionary(state = initState(), action) {
   console.log('action')
   console.log(action)
   switch (action.type) {

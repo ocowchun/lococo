@@ -13,7 +13,6 @@ export const ERROR    = 'ERROR';
  * @return {} [description]
  */
 export function readWordGroup(workGroup, validated) {
-	const dicData = dictionaryData;
 
 	if(validated) {
 	  ipcRenderer.send(READ_WORD_GROUP, workGroup);
