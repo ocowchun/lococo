@@ -42,7 +42,6 @@ export function receiveKeys(data) {
 
 
 export function clickDictionary(dic) {
-  console.log('@@')
   ipcRenderer.send('clickDictionary', dic);
   return {
     type: CLICK_DICTIONARY,
