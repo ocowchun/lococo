@@ -1,5 +1,13 @@
 var _=require('underscore');
 import { PING_MESSAGE, RECEIVE_FILES, RECEIVE_KEYS } from '../actions/file';
+import { 
+          READ_WORD_GROUP,
+          READ_WORD,
+          ADD_WORD,
+          SAVE_DICTIONARY,
+          ERROR
+       }
+from '../actions/dictionary.js';
 
 function initState() {
   return {
@@ -10,22 +18,34 @@ function initState() {
   };
 }
 
+const simpleLogger = (msg) => {
+  console.log.call(console, `%c(reducer) ${msg}`,'font-weight: bold;');
+};
+
+const log = simpleLogger;
+
 export default function dictionary(state = initState(), action) {
-  console.log('action')
-  console.log(action)
   switch (action.type) {
     case RECEIVE_FILES:
-      console.log('reducer RECEIVE_FILES');
+      log('RECEIVE_FILES');
+      
       return _.extend({}, state, {
         dictionaries: action.dictionaries
       });
     case RECEIVE_KEYS:
-      console.log('reducer RECEIVE_KEYS');
+      log('RECEIVE_FILES');
       return _.extend({}, state, {
         keys: action.keys,
         current:action.currentDictionary,
         currentDir:action.currentDir
       });
+    case READ_WORD:
+      log('READWORD');
+      return state;
+    case READ_WORD_GROUP:
+      log('READ_WORD_GROUP');
+      return state;
+
     default:
       return state;
   }
