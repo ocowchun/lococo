@@ -6,3 +6,5 @@ i18n.json
 npm-debug.log
 
 bower_components
+
+.DS_Store
