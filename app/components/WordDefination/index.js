@@ -4,12 +4,13 @@ import Style from './style.scss';
 import uuid from '../../utils/uuid';
 
 const propTypes = {
+  currentWord: PropTypes.string.isRequired,
 	word: PropTypes.object.isRequired,
 	addWord: PropTypes.func.isRequired,
   saveDictionary: PropTypes.func.isRequired,
 };
 
-export default class WordDefination extends React.Component {
+class WordDefination extends React.Component {
   
   constructor(props) {
     super(props);
@@ -45,6 +46,7 @@ export default class WordDefination extends React.Component {
 
     return (
       <div>
+        <h2>{this.props.currentWord}</h2>
         {locales}
 
         <button onClick={this.handleSaveButton.bind(this)} className="SaveDictionary">儲存</button>
@@ -54,3 +56,4 @@ export default class WordDefination extends React.Component {
 }
 
 WordDefination.PropTypes = propTypes;
+export default WordDefination;

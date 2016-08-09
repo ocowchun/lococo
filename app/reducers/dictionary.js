@@ -41,7 +41,11 @@ export default function dictionary(state = initState(), action) {
       });
     case READ_WORD:
       log('READWORD');
-      return state;
+
+      return _.extend({}, state, {
+        currentWord: action.word
+      });
+
     case READ_WORD_GROUP:
       log('READ_WORD_GROUP');
       return state;

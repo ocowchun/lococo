@@ -1,5 +1,6 @@
 const RECEIVE_WORD = 'RECEIVE_WORD';
 
+
 const initialState = {};
 
 const actionHandler = {};

@@ -83,6 +83,7 @@ class App extends Component {
         />
         <div className="container menu-offset">
           <WordDefination
+            currentWord={this.props.dictionary.currentWord}
             word={this.props.word}
             addWord={this.props.actions.addWord}
             saveDictionary={this.props.actions.saveDictionary}
