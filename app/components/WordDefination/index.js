@@ -22,7 +22,9 @@ export default class WordDefination extends React.Component {
 
   handleButtonClick(e) {
     const currentValue = this.refs[e.target.value].value;
+    const { addWord } = this.props;
     
+    addWord(currentValue);
   }
 
   handleSaveButton(e) {
