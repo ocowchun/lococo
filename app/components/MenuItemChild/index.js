@@ -6,6 +6,7 @@ import MenuItem from '../MenuItem/index.js';
 const propTypes = {
   keyName:  PropTypes.string.isRequired,
   isDir: PropTypes.bool.isRequired,
+  readWord: PropTypes.func.isRequired,
 };
 
 export default class MenuItemChild extends React.Component {
@@ -29,8 +30,8 @@ export default class MenuItemChild extends React.Component {
   }
 
   handleClick(e) {
-    const { isDir } = this.props;
-    
+    const { readWord } = this.props;
+    readWord();
   }
 
   render() {
