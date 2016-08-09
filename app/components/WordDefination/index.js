@@ -23,9 +23,10 @@ class WordDefination extends React.Component {
 
   handleButtonClick(e) {
     const currentValue = this.refs[e.target.value].value;
-    const { addWord } = this.props;
+    const locale       = e.target.value;
+    const { currentWord, addWord } = this.props;
     
-    addWord(currentValue);
+    addWord(currentWord, currentValue, locale);
   }
 
   handleSaveButton(e) {

@@ -57,13 +57,14 @@ export function receiveWord(word) {
  * @param {[string]} word       [e.g: controller.home.index]
  * @param {[type]} defination [description]
  */
-export function addWord(word, defination) {
-  ipcRenderer.send(ADD_WORD, word, defination);
+export function addWord(word, defination, locale) {
+  ipcRenderer.send(ADD_WORD, word, defination, locale);
 
   return {
   	type: ADD_WORD,
   	word,
-  	defination
+  	defination,
+    locale
   }
 }
 
