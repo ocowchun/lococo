@@ -27,6 +27,8 @@ class App extends Component {
     const receiveFiles = this.props.actions.receiveFiles;
     const receiveKeys = this.props.actions.receiveKeys;
 
+    const { receiveWord } = this.props.actions;
+
     ipcRenderer.on('receiveKeys', (event, data) => {
       console.log('ipc receiveKeys')
       console.log(data);
