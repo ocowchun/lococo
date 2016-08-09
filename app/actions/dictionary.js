@@ -58,13 +58,18 @@ export function receiveWord(word) {
  * @param {[type]} defination [description]
  */
 export function addWord(word, defination, locale) {
-  ipcRenderer.send(ADD_WORD, word, defination, locale);
+
+  const wordDefination = {
+    word,
+    defination,
+    locale
+  };
+  
+  ipcRenderer.send(ADD_WORD, wordDefination);
 
   return {
   	type: ADD_WORD,
-  	word,
-  	defination,
-    locale
+  	wordDefination
   }
 }
 
