@@ -14,10 +14,14 @@ const {
 const {
   ipcRenderer
 } = require('electron');
+
 import * as Actions from '../actions'
-import DictionaryIndexPage from '../components/DictionaryIndexPage'
-import DictionaryPage from '../components/DictionaryPage'
+
+import DictionaryIndexPage from '../components/DictionaryIndexPage';
+import DictionaryPage from '../components/DictionaryPage';
+
 import Menu from '../components/Menu';
+import WordDefination from '../components/WordDefination';
 
 require('../../dist/index.css');
 
@@ -69,7 +73,7 @@ class App extends Component {
       return pages['main']();
     }
   }
-  
+
   render() {
     
     return (
@@ -78,9 +82,9 @@ class App extends Component {
           {...this.props}
         />
         <div className="container menu-offset">
-          hello world!
-          <button onClick={this.openFile.bind(this)}>click</button>
-          {this.renderPages()}
+          <WordDefination
+            word={this.props.word}
+          />
         </div>
       </div>
     );
@@ -93,14 +97,7 @@ App.propTypes = {
 }
 
 function mapStateToProps(state) {
-  console.log("====state===")
-  console.log(state)
   return state;
-// let {dir,files,dictionaries,keys,currentDictionaryDir,currentDictionary}=state.files
-
-// let props={dir,files,dictionaries,keys,currentDictionaryDir,currentDictionary}
-
-//   return props;
 }
 
 function mapDispatchToProps(dispatch) {
