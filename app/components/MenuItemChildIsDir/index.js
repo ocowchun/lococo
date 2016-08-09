@@ -17,11 +17,15 @@ export default class MenuItemChildIsDir extends React.Component {
 
   }
 
+  handleClick(e) {
+    console.log(this);
+  }
+
   render() {
     return (
       <li>
-        <span>{this.props.keyName}</span>
-   			
+        <span onClick={this.handleClick.bind(this)}><strong>{this.props.keyName}</strong></span>
+           			
       </li>
     );
   }
