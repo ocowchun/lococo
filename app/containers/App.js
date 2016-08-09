@@ -37,11 +37,14 @@ class App extends Component {
       console.log('ipc receiveFiles')
       receiveFiles(data);
     });
+
+    ipcRenderer.on('readWord', (event, data) => {
+      console.log('ipc readWord');
+      receiveWord(data);
+    })
   }
 
   componentDidUpdate() {
-    this.props.actions.readWord('controller.index.home');
-    this.props.actions.readWordGroup('controller.index.home');
   }
 
   openFile() {

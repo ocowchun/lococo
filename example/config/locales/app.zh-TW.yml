@@ -2,6 +2,6 @@ zh-TW:
   controller:
     home:
       index: "首頁"
-  hello:
-  yoyo:
+  hello: HELLO
+  yoyo: HELLO
       
