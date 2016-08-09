@@ -5,6 +5,8 @@ export const READ_WORD = 'READ_WORD';
 export const ADD_WORD = 'ADD_WORD';
 export const SAVE_DICTIONARY = 'SAVE_DICTIONARY';
 
+export const RECEIVE_WORD = 'RECEIVE_WORD';
+
 export const ERROR    = 'ERROR';
 
 /**
@@ -41,6 +43,13 @@ export function readWord(word) {
   	type: READ_WORD,
   	word
   };
+}
+
+export function receiveWord(word) {
+  return {
+    type: RECEIVE_WORD,
+    word
+  }
 }
 
 /**
