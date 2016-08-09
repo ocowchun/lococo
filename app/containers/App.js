@@ -85,6 +85,7 @@ class App extends Component {
           <WordDefination
             word={this.props.word}
             addWord={this.props.actions.addWord}
+            saveDictionary={this.props.actions.saveDictionary}
           />
         </div>
       </div>

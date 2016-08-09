@@ -6,7 +6,8 @@ import uuid from '../../utils/uuid';
 const propTypes = {
 	word: PropTypes.object.isRequired,
 	addWord: PropTypes.func.isRequired,
-}
+  saveDictionary: PropTypes.func.isRequired,
+};
 
 export default class WordDefination extends React.Component {
   
@@ -24,6 +25,10 @@ export default class WordDefination extends React.Component {
     
   }
 
+  handleSaveButton(e) {
+
+  }
+
   render() {
   	let locales = [];
   	for(let props in this.props.word) {
@@ -37,7 +42,11 @@ export default class WordDefination extends React.Component {
 		}
 
     return (
-      <div>{locales}</div>
+      <div>
+        {locales}
+
+        <button onClick={this.handleSaveButton.bind(this)} className="SaveDictionary">儲存</button>
+      </div>
     );
   }
 }
