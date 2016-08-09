@@ -30,8 +30,8 @@ export default class MenuItemChild extends React.Component {
   }
 
   handleClick(e) {
-    const { readWord } = this.props;
-    readWord();
+    const { readWord, keyName } = this.props;
+    readWord(keyName);
   }
 
   render() {
