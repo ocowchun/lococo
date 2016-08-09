@@ -54,6 +54,22 @@ class App extends Component {
     ping();
   }
 
+  renderPages() {
+    let files = this.props.files;
+    let dictionary = this.props.dictionary;
+    const actions = this.props.actions;
+    const currentRoute = this.props.route.currentRoute;
+    let pages = {}
+    pages['main'] = () => <DictionaryIndexPage dictionary={dictionary} actions={actions} />
+    pages['dictionaryShow'] = () => <DictionaryPage dictionary={dictionary} actions={actions} />
+
+    if (pages[currentRoute]) {
+      return pages[currentRoute]()
+    } else {
+      return pages['main']();
+    }
+  }
+  
   render() {
     
     return (
@@ -70,21 +86,6 @@ class App extends Component {
     );
   }
 
-  renderPages() {
-    let files = this.props.files;
-    let dictionary = this.props.dictionary;
-    const actions = this.props.actions;
-    const currentRoute = this.props.route.currentRoute;
-    let pages = {}
-    pages['main'] = () => <DictionaryIndexPage dictionary={dictionary} actions={actions} />
-    pages['dictionaryShow'] = () => <DictionaryPage dictionary={dictionary} actions={actions} />
-
-    if (pages[currentRoute]) {
-      return pages[currentRoute]()
-    } else {
-      return pages['main']();
-    }
-  }
 }
 
 App.propTypes = {
