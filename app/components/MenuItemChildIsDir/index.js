@@ -14,14 +14,6 @@ export default class MenuItemChildIsDir extends React.Component {
     super(props);
   }
 
-  renderMenuItemChild() {
-  	
-  }
-
-  renderMenuItemIsDir() {
-
-  }
-
   handleClick(e) {
     const { readWordGroup, readWord } = this.props;
 
@@ -29,9 +21,16 @@ export default class MenuItemChildIsDir extends React.Component {
   }
 
   render() {
+    const { keyName } = this.props;
+    let displayName = keyName.split('.');
+    displayName = displayName[displayName.length - 1];
+
+
     return (
       <li>
-        <span onClick={this.handleClick.bind(this)}><strong>{this.props.keyName}</strong></span>
+        <span onClick={this.handleClick.bind(this)}>
+          <strong>{displayName}</strong>
+        </span>
       </li>
     );
   }

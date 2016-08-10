@@ -35,10 +35,14 @@ export default class MenuItemChild extends React.Component {
   }
 
   render() {
+    const { keyName } = this.props;
+    let displayName = keyName.split('.');
+    displayName = displayName[displayName.length - 1];
+
 
     return (
       <li onClick={this.handleClick.bind(this)}>
-       {this.props.keyName}
+       {displayName}
       </li>
     );
   }
