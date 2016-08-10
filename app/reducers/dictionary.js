@@ -56,7 +56,6 @@ export default function dictionary(state = initState(), action) {
     case READ_WORD_GROUP:
       log('READ_WORD_GROUP');
       return state;
-
     default:
       return state;
   }

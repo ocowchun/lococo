@@ -6,6 +6,7 @@ export const ADD_WORD = 'ADD_WORD';
 export const SAVE_DICTIONARY = 'SAVE_DICTIONARY';
 
 export const RECEIVE_WORD = 'RECEIVE_WORD';
+export const RECEIVE_ADD_WORD = 'RECEIVE_ADD_WORD';
 export const RECEIVE_WORD_GROUP = 'RECEIVE_WORD_GROUP';
 
 export const ERROR    = 'ERROR';
@@ -50,6 +51,11 @@ export function readWord(word) {
   };
 }
 
+/**
+ * [receiveWord description]
+ * @param  {[string]} word [description]
+ * @return {[type]}      [description]
+ */
 export function receiveWord(word) {
   return {
     type: RECEIVE_WORD,
@@ -75,6 +81,13 @@ export function addWord(word, defination, locale) {
   return {
   	type: ADD_WORD,
   	wordDefination
+  }
+}
+
+export function receiveAddWord(newWord) {
+  return {
+    type: RECEIVE_ADD_WORD,
+    word: newWord
   }
 }
 

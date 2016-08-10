@@ -6,7 +6,7 @@ var config = {};
 
 Dictionary.loadDictionary(files, config).then(function(dictionary) {
 	var result= dictionary.listKeys('activemodel.attributes.profile');
-	console.log(result)
+	console.log(result);
 	
 })
 
