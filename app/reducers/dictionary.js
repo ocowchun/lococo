@@ -3,6 +3,7 @@ import { PING_MESSAGE, RECEIVE_FILES, RECEIVE_KEYS } from '../actions/file';
 import { 
           READ_WORD_GROUP,
           READ_WORD,
+          RECEIVE_WORD_GROUP,
           ADD_WORD,
           SAVE_DICTIONARY,
           ERROR
@@ -46,6 +47,12 @@ export default function dictionary(state = initState(), action) {
         currentWord: action.word
       });
 
+    case RECEIVE_WORD_GROUP:
+      log('receive word group');
+
+      return _.extend({}, state, {
+        keys: action.wordGroupKeys
+      });
     case READ_WORD_GROUP:
       log('READ_WORD_GROUP');
       return state;

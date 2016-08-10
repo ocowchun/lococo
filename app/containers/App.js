@@ -31,7 +31,10 @@ class App extends Component {
     const receiveFiles = this.props.actions.receiveFiles;
     const receiveKeys = this.props.actions.receiveKeys;
 
-    const { receiveWord } = this.props.actions;
+    const { 
+      receiveWord,
+      receiveWordGroup
+    } = this.props.actions;
 
     ipcRenderer.on('receiveKeys', (event, data) => {
       console.log('ipc receiveKeys')
@@ -48,6 +51,11 @@ class App extends Component {
       console.log('ipc readWord');
       receiveWord(data);
     })
+
+    ipcRenderer.on('receiveWordGroup', (e, data) => {
+      console.log('ipc receive word gorup');
+      receiveWordGroup(data);
+    });
   }
 
   componentDidUpdate() {
