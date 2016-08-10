@@ -6,6 +6,7 @@ export const ADD_WORD = 'ADD_WORD';
 export const SAVE_DICTIONARY = 'SAVE_DICTIONARY';
 
 export const RECEIVE_WORD = 'RECEIVE_WORD';
+export const RECEIVE_WORD_GROUP = 'RECEIVE_WORD_GROUP';
 
 export const ERROR    = 'ERROR';
 
@@ -22,6 +23,14 @@ export function readWordGroup(wordGroup) {
   	type: READ_WORD_GROUP,
   	wordGroup
   };
+}
+
+
+export function receiveWordGroup(wordGroupKeys) {
+  return {
+    type: RECEIVE_WORD_GROUP,
+    wordGroupKeys
+  }
 }
 
 
