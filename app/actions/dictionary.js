@@ -11,20 +11,16 @@ export const ERROR    = 'ERROR';
 
 /**
  * [readWordGroup 讀取 yml 檔的 key]
- * @param  {workGroup: string}
+ * @param  {wordGroup: string}
  * @return {} [description]
  */
-export function readWordGroup(workGroup, validated) {
+export function readWordGroup(wordGroup) {
 
-	if(validated) {
-	  ipcRenderer.send(READ_WORD_GROUP, workGroup);
-	} else {
-		ipcRenderer.send(ERROR);
-	}
+	ipcRenderer.send(wordGroup)
   
   return {
   	type: READ_WORD_GROUP,
-  	workGroup
+  	wordGroup
   };
 }
 
