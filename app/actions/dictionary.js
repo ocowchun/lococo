@@ -16,7 +16,7 @@ export const ERROR    = 'ERROR';
  */
 export function readWordGroup(wordGroup) {
 
-	ipcRenderer.send(wordGroup)
+	ipcRenderer.send(READ_WORD_GROUP, wordGroup)
   
   return {
   	type: READ_WORD_GROUP,
