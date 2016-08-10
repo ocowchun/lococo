@@ -1,7 +1,12 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 import Style from './style.scss';
 
 import MenuItemChild from '../MenuItemChild/';
+
+const propTypes = {
+  readWordGroup: PropTypes.func.isRequired,
+  readWord: PropTypes.func.isRequired,
+};
 
 export default class MenuItemChildIsDir extends React.Component {
   
@@ -18,15 +23,18 @@ export default class MenuItemChildIsDir extends React.Component {
   }
 
   handleClick(e) {
-    console.log(this);
+    const { readWordGroup, readWord } = this.props;
+
+    readWordGroup(this.props.keyName);
   }
 
   render() {
     return (
       <li>
         <span onClick={this.handleClick.bind(this)}><strong>{this.props.keyName}</strong></span>
-           			
       </li>
     );
   }
 }
+
+MenuItemChildIsDir.PropTypes = propTypes;
