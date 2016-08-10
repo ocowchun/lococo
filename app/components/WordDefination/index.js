@@ -16,12 +16,7 @@ class WordDefination extends React.Component {
     super(props);
   }
 
-  handleChange(e) {
-    console.log(this.refs);
-    console.log(e);
-  }
-
-  handleButtonClick(e) {
+  onEditButtonClick(e) {
     const currentValue = this.refs[e.target.value].value;
     const locale       = e.target.value;
     const { currentWord, addWord } = this.props;
@@ -29,28 +24,28 @@ class WordDefination extends React.Component {
     addWord(currentWord, currentValue, locale);
   }
 
-  handleSaveButton(e) {
+  renderLocales() {
+    let locales = [];
+    for(let props in this.props.word) {
+      locales.push(
+        <div key={uuid()} className="WordGroup">
+          <label>{props}</label>
+          <input ref={props} defaultValue={this.props.word[props]} />
+          <button value={props} onClick={this.onEditButtonClick.bind(this)}>修改</button>
+        </div>
+      );
+    }
 
+    return locales;
   }
 
   render() {
-  	let locales = [];
-  	for(let props in this.props.word) {
-		  locales.push(
-		  	<div key={uuid()} className="WordGroup">
-			  	<label>{props}</label>
-			  	<input ref={props} onChange={this.handleChange.bind(this)} defaultValue={this.props.word[props]} />
-          <button value={props} onClick={this.handleButtonClick.bind(this)}>修改</button>
-		  	</div>
-		  );
-		}
-
     return (
       <div>
         <h2>{this.props.currentWord}</h2>
-        {locales}
+        {this.renderLocales()}
 
-        <button onClick={this.handleSaveButton.bind(this)} className="SaveDictionary">儲存</button>
+        <button className="SaveDictionary">儲存</button>
       </div>
     );
   }
