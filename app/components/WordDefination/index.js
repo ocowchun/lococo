@@ -24,6 +24,11 @@ class WordDefination extends React.Component {
     addWord(currentWord, currentValue, locale);
   }
 
+  onSaveButtonClick(e) {
+    const { saveDictionary } = this.props;
+    saveDictionary();
+  }
+
   renderLocales() {
     let locales = [];
     for(let props in this.props.word) {
@@ -45,7 +50,7 @@ class WordDefination extends React.Component {
         <h2>{this.props.currentWord}</h2>
         {this.renderLocales()}
 
-        <button onClick={} className="SaveDictionary">儲存</button>
+        <button onClick={this.onSaveButtonClick.bind(this)} className="SaveDictionary">儲存</button>
       </div>
     );
   }

@@ -95,10 +95,16 @@ export function receiveAddWord(newWord) {
  * [saveDictionary save current dictionary]
  * @return {[type]} [description]
  */
-export function saveDictionary(currentDictionary) {
+export function saveDictionary() {
   ipcRenderer.send(SAVE_DICTIONARY);
 
   return {
   	type: SAVE_DICTIONARY,
   }
+}
+
+export function receiveSavedMessage() {
+  return {
+    type: 'RECEIVE_SAVED_MESSAGE',
+  } 
 }

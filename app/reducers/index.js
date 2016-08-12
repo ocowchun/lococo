@@ -4,13 +4,15 @@ import files from './files';
 import dictionary from './dictionary';
 import route from './route';
 import word from './word';
+import message from './message';
 
 const rootReducer = combineReducers({
   counter,
   files,
   dictionary,
   route,
-  word
+  word,
+  message
 });
 
 export default rootReducer;

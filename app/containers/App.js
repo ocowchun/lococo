@@ -34,7 +34,8 @@ class App extends Component {
     const { 
       receiveWord,
       receiveWordGroup,
-      receiveAddWord
+      receiveAddWord,
+      receiveSavedMessage
     } = this.props.actions;
 
     ipcRenderer.on('receiveKeys', (event, data) => {
@@ -61,6 +62,11 @@ class App extends Component {
     ipcRenderer.on('receiveAddWord', (e, data) => {
       console.log('ipc receive word gorup');
       receiveAddWord(data);
+    });
+
+    ipcRenderer.on('dictionarySaved', (e, data) => {
+      console.log('ipc receive word gorup');
+      receiveSavedMessage();
     });
   }
 

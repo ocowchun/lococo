@@ -1,119 +1,119 @@
 zh-TW:
- activemodel:
-   attributes:
-     profile:
-       android: 'Android'
-       dotnet: '.NET'
-       cpp: 'C++'
-       c: 'C'
-       js: JavaScript
-       css: HTML/CSS
-       sass: Sass
-       less: Less
-       coffee: CoffeeScript
-       type_script: TypeScript
-       nodejs: Node.js
-       php: PHP
-       python: Python
-       ruby: Ruby
-       java: Java
-       scala: Scala
-       devops: DevOps
-       obj_c: Objective-C
-       swift: Swift
-       city: 居住城市
-       wish: 工作許願池
-       skill_description: 技能描述
-       interested_job: 職務偏好
-       taipei: 台北市
-       new_taipei: 新北市
-       hsinchu: 新竹市
-       taichung: 台中市
-       tainan: 台南市
-       kaohsiung: 高雄市
-       others: 其他
-       nangang_neihu: 南港/內湖
-       daan_songshan: 大安/松山
-       xinyi: 信義
-       zhongzheng_zhongshan: 中正/中山
-       taipei_others: 其他
-       wugu_sanchong: 五股/三重
-       tucheng_banqiao: 土城/板橋
-       zhonghe_yonghe: 中和/永和
-       xindian: 新店
-       xizhi: 汐止
-       new_taipei_others: 其他
-       db2: DB2
-       oracle: Oracle DB
-       mysql: MySQL
-       postgres: PostgreSQL
-       redis: Redis
-       mongodb: MongoDB
-       elasticsearch: Elasticsearch
-       hbase: HBase
-       sql_server: SQL Server
-       couchdb: CounchDB
-       neo4j: Neo4j
-       cassandra: Cassandra
-       hadoop: Hadoop
-       spark: Spark
-       gulp: gulp
-       yeoman: Yeoman
-       grunt: Grunt
-       git: Git
-       svn: SVN
-       mercurial: Mercurial
-       aws: AWS
-       azure: Azure
-       gce: GCE
-       jenkins: Jenkins
-       jquery: jQuery
-       angular: AngularJS
-       backbone: Backbone.js
-       ember: Ember.js
-       react: React
-       meteor: Meteor
-       d3: D3.js
-       spine: Spine
-       flux: Flux
-       bootstrap: Bootstrap
-       foundation: Foundation
-       kube: Kube
-       semantic_ui: Semantic UI
-       express: express
-       loopback: LoopBack
-       sails: Sails.js
-       koa: Koa
-       socket_io: socket.io
-       ci: CodeIgniter
-       laravel: Laravel
-       wordpress: WordPress
-       joomla: Joomla!
-       phalcon: Phalcon
-       symfony2: Symfony
-       zen_framework: Zend Framework
-       cakephp: CakePHP
-       django: Django
-       falcon: Falcon
-       flask: Flask
-       rails: Ruby on Rails
-       sinatra: Sinatra
-       rspec: RSpec
-       spring: Spring Framework
-       hibernate: Hibernate
-       gwt: GWT
-       struts: Struts
-       play: Play
-       lift: Lift
-       scalatra: Scalatra
-       chef: Chef
-       puppet: Puppet
-       ansible: Ansible
-       vagrant: Vagrant
-       docker: Docker
-       openstack: OpenStack
-       fabric: Fabric
- activerecord:
+  activemodel:
+    attributes:
+      profile:
+        android: Android
+        dotnet: .NET
+        cpp: C++
+        c: C
+        js: JavaScript
+        css: HTML/CSS
+        sass: Sass
+        less: Less
+        coffee: CoffeeScript
+        type_script: TypeScript
+        nodejs: Node.js
+        php: PHP
+        python: Python
+        ruby: Ruby
+        java: Java
+        scala: Scala
+        devops: DevOps
+        obj_c: Objective-C
+        swift: Swift
+        city: 居住城市
+        wish: 工作許願池
+        skill_description: 技能描述
+        interested_job: 職務偏好
+        taipei: 台北市
+        new_taipei: 新北市
+        hsinchu: 新竹市
+        taichung: 台中市
+        tainan: 台南市
+        kaohsiung: 高雄市
+        others: 其他
+        nangang_neihu: 南港/內湖
+        daan_songshan: 大安/松山
+        xinyi: 信義
+        zhongzheng_zhongshan: 中正/中山
+        taipei_others: 其他
+        wugu_sanchong: 五股/三重
+        tucheng_banqiao: 土城/板橋
+        zhonghe_yonghe: 中和/永和
+        xindian: 新店
+        xizhi: 汐止
+        new_taipei_others: 其他
+        db2: DB2
+        oracle: Oracle DB
+        mysql: MySQL
+        postgres: PostgreSQL
+        redis: Redis
+        mongodb: MongoDB
+        elasticsearch: Elasticsearch
+        hbase: HBase
+        sql_server: SQL Server
+        couchdb: CounchDB
+        neo4j: Neo4j
+        cassandra: Cassandra
+        hadoop: Hadoop
+        spark: Spark
+        gulp: gulp
+        yeoman: Yeoman
+        grunt: Grunt
+        git: Git
+        svn: SVN
+        mercurial: Mercurial
+        aws: AWS
+        azure: Azure
+        gce: GCE
+        jenkins: Jenkins
+        jquery: jQuery
+        angular: AngularJS
+        backbone: Backbone.js
+        ember: Ember.js
+        react: React
+        meteor: Meteor
+        d3: D3.js
+        spine: Spine
+        flux: Flux
+        bootstrap: Bootstrap
+        foundation: Foundation
+        kube: Kube
+        semantic_ui: Semantic UI
+        express: express
+        loopback: LoopBack
+        sails: Sails.js
+        koa: Koa
+        socket_io: socket.io
+        ci: CodeIgniter
+        laravel: Laravel
+        wordpress: WordPress
+        joomla: Joomla!
+        phalcon: Phalcon
+        symfony2: Symfony
+        zen_framework: Zend Framework
+        cakephp: CakePHP
+        django: Django
+        falcon: Falcon
+        flask: Flask
+        rails: Ruby on Rails
+        sinatra: Sinatra
+        rspec: RSpec
+        spring: Spring Framework
+        hibernate: Hibernate
+        gwt: GWT
+        struts: Struts
+        play: Play
+        lift: Lift
+        scalatra: Scalatra
+        chef: Chef
+        puppet: Puppet
+        ansible: Ansible
+        vagrant: Vagrant
+        docker: Docker
+        openstack: OpenStack
+        fabric: Fabric
+  activerecord:
     models:
       corp_user: 企業會員
     attributes:
@@ -192,7 +192,7 @@ zh-TW:
         place: 工作地點
         content: 工作內容描述
         contact: 如何應徵
-        deadline:  關閉職缺日期
+        deadline: 關閉職缺日期
         state: 職缺狀態
         deadline_type: 應徵期限
         county: 工作所在縣市
@@ -229,386 +229,383 @@ zh-TW:
         name: 推薦者姓名
         email: 推薦者email
       sudo_investigate:
-        interview_time: "面試時間"
-        evaluation: "評價"
+        interview_time: 面試時間
+        evaluation: 評價
         interview_address: 面試地點
         contact_name: 聯絡人
         contact_phone: 聯絡電話
       sudo_investigate_commit:
-        message: "回饋訊息"
+        message: 回饋訊息
       scripture:
         name: 經文名稱
         language: 程式語言
       profile_comment:
-        message: "註記內容"
- enumerize:
-  apply_job_commits:
-    status:
-      apply: "成功申請"
-      sudo_read: "Sudo 已讀"
-      sudo_interview: "Sudo 面談"
-      to_company: "送至公司"
-      reject: "不適合"
-      company_read: "公司已讀"
-      company_reject: "不適合"
-      company_interview: "公司面試"
-      interview_done: "等待結果"
-      interview_again: "再面試"
-      get_offer: "拿到 Offer"
-  company:
-    state:
-      verify: 審核中
-      approve: 通過
-      rejected: 退回
-      draft: 草稿
-    staff_count:
-      s1_10: "1-10"
-      s11_50: "11-50"
-      s51_200: "51-200"
-      s201_500: "201-500"
-      s501_1000: "501-1000"
-      s1001_5000: "1001-5000"
-      s5001_10000: "5001-10000"
-      s10000up: "10000+"
-      hidden_staff_count: "不便透露"
-    stage:
-      seed: "種子輪"
-      angel: "天使輪"
-      a: "A輪"
-      b: "B輪"
-      c: "C輪"
-      d: "D輪"
-      dup: "D輪以上"
-      public_market: "上市、上櫃"
-      hidden: "不便透露"
-      no_requirement: "無募資需求"
-    level:
-      fulltime_level: "正職權限"
-      intern_level: "實習權限"
-      super_level: "完整權限"
-    category:
-      all: '不限'
-      not_select: '不便透露'
-      mobile: 行動網路
-      ec: 電子商務
-      life: 生活服務
-      o2o: O2O
-      culture: 文創娛樂
-      game: 遊戲
-      travel: 旅遊
-      health: 醫療健康
-      education: 教育
-      financial: 金融保險
-      enterprise: 企業服務
-      advertisement: 廣告營銷
-      data: 數據分析
-      security: 資訊安全
-      social: 社交網絡
-      content: 內容媒體
-      iot: IOT
-      tool: 工具軟體
-      other: 其他
-    list:
-      not_select: '不便透露'
-  interested_job:
-    frontend: 前端工程師
-    backend: 後端工程師
-    android: Android
-    ios: iOS
-    pm: 專案經理
-    ui: UI/UX
-    sales: 業務
-    marketing: 行銷
-    fullstack: 全端工程師
-    others: 其他
-  apply_job:
-    status:
-     resume_uncomplete: 履歷未完成
-     reject: 資格不符
-     concat_uncomplete: 填寫聯絡資料
-     not_read: 等待處理
-     sudo_interview: 申請受理中
-     company_interview: 面試安排中
-     cancel: 取消求職
-     approve: 聘用流程
-     done: 完成求職
-    status_message:
-     resume_uncomplete: "哦！您的履歷似乎不夠完整，點擊「編輯個人履歷」展現您不為人知的一面吧！"
-     concat_uncomplete: "申請成功，您的聯絡資訊尚未完成"
-     not_read: "申請成功"
-    user_status:
-      apply: 成功申請
-      sudo_read: "Sudo 已讀"
-      sudo_interview: "Sudo 面談"
-      reject: 不適合
-      to_company: 履歷送至公司
-      company_read: 公司已讀
-      company_interview: 公司面試
-      wait_result: 等待結果
-      interview_again: 再面試
-      get_offer: "Get Offer"
-      take_offer: 接受Offer
-      reject_offer: 拒絕Offer
-    admin_status:
-      not_read: 未讀
-      todo: 待處理
-      need_interview: 待約面試
-      interview: 已約面試
-      sudo_reject: 不適合(Sudo)
-      to_company: 履歷送至公司
-      company_read: 公司已讀
-      company_need_interview: 幫約面試
-      company_interview: 已約面試
-      interview_feedback: 面試回饋
-      interview_again: 再面試
-      company_reject: 不適合(公司)
-      get_offer: "Get Offer"
-      take_offer: 接受Offer
-      reject_offer: 拒絕Offer
-      archive: "歸檔"
-    corp_status:
-      none: none
-      not_read: 未讀
-      todo: 待處理
-      need_interview: 欲面試
-      interview: 已約面試
-      interview_done: 已面試
-      interview_again: 再面試
-      reject: 不適合
-      get_offer: "給 Offer"
-      take_offer: 接受Offer
-      reject_offer: 拒絕Offer
-  corp_user:
-    locale:
-      en: "English"
-      zh-TW: "中文"
-    status:
-      doing: 資料填寫中
-      verify: 審核中
-      approve: 通過認證
-      invited: 已邀請
-  job:
-    experience:
-      unlimit: 不限
-      student: 學生
-      graduated: 應屆畢業
-      one_yr: 1年以下
-      one_to_three: 1-3年
-      three_to_five: 3-5年
-      five_to_ten: 5-10年
-      ten_up: 10年以上
-    category:
+        message: 註記內容
+  enumerize:
+    apply_job_commits:
+      status:
+        apply: 成功申請
+        sudo_read: Sudo 已讀
+        sudo_interview: Sudo 面談
+        to_company: 送至公司
+        reject: 不適合
+        company_read: 公司已讀
+        company_reject: 不適合
+        company_interview: 公司面試
+        interview_done: 等待結果
+        interview_again: 再面試
+        get_offer: 拿到 Offer
+    company:
+      state:
+        verify: 審核中
+        approve: 通過
+        rejected: 退回
+        draft: 草稿
+      staff_count:
+        s1_10: 1-10
+        s11_50: 11-50
+        s51_200: 51-200
+        s201_500: 201-500
+        s501_1000: 501-1000
+        s1001_5000: 1001-5000
+        s5001_10000: 5001-10000
+        s10000up: 10000+
+        hidden_staff_count: 不便透露
+      stage:
+        seed: 種子輪
+        angel: 天使輪
+        a: A輪
+        b: B輪
+        c: C輪
+        d: D輪
+        dup: D輪以上
+        public_market: 上市、上櫃
+        hidden: 不便透露
+        no_requirement: 無募資需求
+      level:
+        fulltime_level: 正職權限
+        intern_level: 實習權限
+        super_level: 完整權限
+      category:
+        all: 不限
+        not_select: 不便透露
+        mobile: 行動網路
+        ec: 電子商務
+        life: 生活服務
+        o2o: O2O
+        culture: 文創娛樂
+        game: 遊戲
+        travel: 旅遊
+        health: 醫療健康
+        education: 教育
+        financial: 金融保險
+        enterprise: 企業服務
+        advertisement: 廣告營銷
+        data: 數據分析
+        security: 資訊安全
+        social: 社交網絡
+        content: 內容媒體
+        iot: IOT
+        tool: 工具軟體
+        other: 其他
+      list:
+        not_select: 不便透露
+    interested_job:
       frontend: 前端工程師
       backend: 後端工程師
-      android: Android 工程師
-      ios: iOS 工程師
+      android: Android
+      ios: iOS
       pm: 專案經理
       ui: UI/UX
       sales: 業務
       marketing: 行銷
-      others: 其他
       fullstack: 全端工程師
-    status:
-      close: 關閉
-      publish: 公開
-    job_type:
-      hh: 獵頭
-      intern: 實習
-      general: 非獵頭
-      fulltime: 正職
-      all: 全部
-    categories_options:
-      development: '技術開發'
-      technical: 技術
-      backend: 後端
-      java: Java
-      python: Python
-      php: PHP
-      c_sharp: 'C#'
-      cpp: 'C++'
-      go: Go
-      perl: Perl
-      j2ee: J2EE
-      hadoop: Hadoop
-      nodejs: Node.js
-      rails: Rails
-      dotnet: '.NET'
-      data_mining: 'Data Mining'
-      algorithm: 'Algorithm'
-      frontend: 前端
-      actionscript: ActionScript
-      html5: 'HTML5'
-      javascript: JavaScript
-      reactjs: 'React.js'
-      jquery: jQuery
-      angularjs: 'Angular.js'
-      fullstack: '全端'
-      mobile: 行動開發
-      android: 'Android'
-      obj_c: 'Objective-C'
-      swift: Swift
-      test: 測試工程
-      test_engineer: 'Testing Enginner'
-      test_other: 其他
-      data: 資料分析
-      data_analytics: 'Data Analytics'
-      data_other: 其他
-      technical_high: 高階職位
-      technical_manager: 'Technical Manager'
-      director_of_engineering: 'Director of Engineering'
-      architect: 'Architect'
-      cto: CTO
-      security_engineer: Security Engineer
-      technical_high_other: 其他
-      product_and_project: '產品/專案'
-      product: '產品經理'
-      product_manager: 'Product Manager'
-      a_product_manager: 'Associate Product Manager'
-      product_other: 其他
-      project: '專案經理'
-      project_manager: 'Project Manager'
-      a_project_manager: 'Associate Project Manager'
-      project_other: 其他
-      pp_high: 高階職位
-      senior_project_manager: 'Senior Project Manager'
-      senior_product_manager: 'Senior Product Manager'
-      pp_high_other: 其他
-      design: 設計
-      ui: 'UI 設計'
-      web_ui_designer: 'Web UI Designer'
-      app_ui_designer: 'APP UI Designer'
-      senior_web_ui_designer: 'Senior Web UI Designer'
-      senior_app_ui_designer: 'Senior APP UI Designer'
-      ui_other: 其他
-      ux: 'UX 設計'
-      ux_designer: 'UX Designer'
-      senior_ux_designer: 'Senior UX Designer'
-      ux_other: 其他
-      art: '平面設計'
-      graphic_designer: 'Graphic Designer'
-      art_other: '其他'
-      design_high: '高階職位'
-      director_of_design: 'Director of Design'
-      art_director: 'Art Director'
-      ux_director: 'UX Director'
-      ui_director: 'UI Director'
-      ui_lead: 'UI Lead'
-      ux_lead: 'UX Lead'
-      design_high_other: '其他'
-      sales: 業務
-      marketing: 行銷
-      other: 其他
-    place:
-      taipei_city: 臺北市
-      new_taipei_city: 新北市
-      taoyuan_city: 桃園市
-      taichung_city: 臺中市
-      tainan_city: 臺南市
-      kaohsiung_city: 高雄市
-      keelung_city: 基隆市
-      hsinchu_city: 新竹市
-      chiayi_city: 嘉義市
-      hsinchu_county: 新竹縣
-      miaoli_county: 苗栗縣
-      changhua_county: 彰化縣
-      nantou_county: 南投縣
-      yunlin_county: 雲林縣
-      chiayi_county: 嘉義縣
-      pingtung_county: 屏東縣
-      yilan_county: 宜蘭縣
-      hualien_county: 花蓮縣
-      taitung_county: 臺東縣
-      penghu_county: 澎湖縣
-      america: 美國
-      indonesia: 印尼
-      malaysia: 馬來西亞
-      singapore: 新加坡
-      thailand: 泰國
-      vietnam: 越南
-      china: 中國
-      japan: 日本
-      philippines: 菲律賓
-      other: 其他工作地點
-      remote: 遠端工作
-  intern_investigates:
-    user_status:
-      us_not_read: 提出申請
-      us_readed: 已讀
-      us_need_improve: 需修改
-      us_improved: 已修改
-      us_interview: 待面試
-    admin_status:
-      as_not_read: 未讀
-      as_todo: 待處理
-      as_need_improve: 需修改
-      as_improved: 已修改
-      as_need_interview: 待約面試
-      as_interview: 已約面試
-      as_verify: 已審核
-    evaluation:
-      no_evaluation: 尚未評價
-      normal: 普通
-      good: 優質
-  sudo_investigates:
-    user_status:
-      verifying: 審核中
-      need_improve: 需修改
-      interview: 已約面試
-      approve: 已審核
-      already_update: "已修改"
-    admin_status:
-      not_read: 未讀
-      todo: 待處理
-      need_improve: 需修改
-      already_update: "已修改"
-      improved: 已修改
-      need_interview: 待約面試
-      interview: 已約面試
-      approve: 已審核
-    evaluation:
-      no_evaluation: 尚未評價
-      normal: 普通
-      good: 優質
-  investigate_commits:
-    change_status:
-      not_read: 未讀
-      todo: 待處理
-      need_improve: 需修改
-      improved: 已修改
-      need_interview: 待約面試
-      interview: 已約面試
-      verify: 已審核
-  intern_apply_jobs:
-    corp_status:
-      all: '全部'
-      cs_not_verify: 尚未審核
-      cs_not_read: 未讀
-      cs_need_interview: 約面試
-      cs_reject: 不合適
-      cs_todo: 待處理
-      cs_archive: 歸檔
-    user_status:
-      us_not_read: 成功申請
-      us_readed: 已讀
-      us_reject: 不適合
-      us_archive: 歸檔
-  user_educations:
-    degree:
-      high_school: 高中
-      bachelor: 學士
-      master: 碩士
-      phd: 博士
-      other: 其他
-  job_referrals:
-    user_status:
-      alread_apply: "已投遞履歷"
-      get_offer: "申請獎勵"
-      award_apply: "申請受理中"
-      award_complete: "已領取"
-      apply_failed: 推薦失敗
-  beta_features:
-    feature:
-      job_referral: "邀請職缺"
-
-      
-
+      others: 其他
+    apply_job:
+      status:
+        resume_uncomplete: 履歷未完成
+        reject: 資格不符
+        concat_uncomplete: 填寫聯絡資料
+        not_read: 等待處理
+        sudo_interview: 申請受理中
+        company_interview: 面試安排中
+        cancel: 取消求職
+        approve: 聘用流程
+        done: 完成求職
+      status_message:
+        resume_uncomplete: 哦！您的履歷似乎不夠完整，點擊「編輯個人履歷」展現您不為人知的一面吧！
+        concat_uncomplete: 申請成功，您的聯絡資訊尚未完成
+        not_read: 申請成功
+      user_status:
+        apply: 成功申請
+        sudo_read: Sudo 已讀
+        sudo_interview: Sudo 面談
+        reject: 不適合
+        to_company: 履歷送至公司
+        company_read: 公司已讀
+        company_interview: 公司面試
+        wait_result: 等待結果
+        interview_again: 再面試
+        get_offer: Get Offer
+        take_offer: 接受Offer
+        reject_offer: 拒絕Offer
+      admin_status:
+        not_read: 未讀
+        todo: 待處理
+        need_interview: 待約面試
+        interview: 已約面試
+        sudo_reject: 不適合(Sudo)
+        to_company: 履歷送至公司
+        company_read: 公司已讀
+        company_need_interview: 幫約面試
+        company_interview: 已約面試
+        interview_feedback: 面試回饋
+        interview_again: 再面試
+        company_reject: 不適合(公司)
+        get_offer: Get Offer
+        take_offer: 接受Offer
+        reject_offer: 拒絕Offer
+        archive: 歸檔
+      corp_status:
+        none: none
+        not_read: 未讀
+        todo: 待處理
+        need_interview: 欲面試
+        interview: 已約面試
+        interview_done: 已面試
+        interview_again: 再面試
+        reject: 不適合
+        get_offer: 給 Offer
+        take_offer: 接受Offer
+        reject_offer: 拒絕Offer
+    corp_user:
+      locale:
+        en: English
+        zh-TW: 中文
+      status:
+        doing: 資料填寫中
+        verify: 審核中
+        approve: 通過認證
+        invited: 已邀請
+    job:
+      experience:
+        unlimit: 不限
+        student: 學生
+        graduated: 應屆畢業
+        one_yr: 1年以下
+        one_to_three: 1-3年
+        three_to_five: 3-5年
+        five_to_ten: 5-10年
+        ten_up: 10年以上
+      category:
+        frontend: 前端工程師
+        backend: 後端工程師
+        android: Android 工程師
+        ios: iOS 工程師
+        pm: 專案經理
+        ui: UI/UX
+        sales: 業務
+        marketing: 行銷
+        others: 其他
+        fullstack: 全端工程師
+      status:
+        close: 關閉
+        publish: 公開
+      job_type:
+        hh: 獵頭
+        intern: 實習
+        general: 非獵頭
+        fulltime: 正職
+        all: 全部
+      categories_options:
+        development: 技術開發
+        technical: 技術
+        backend: 後端
+        java: Java
+        python: Python
+        php: PHP
+        c_sharp: 'C#'
+        cpp: C++
+        go: Go
+        perl: Perl
+        j2ee: J2EE
+        hadoop: Hadoop
+        nodejs: Node.js
+        rails: Rails
+        dotnet: .NET
+        data_mining: Data Mining
+        algorithm: Algorithm
+        frontend: 前端
+        actionscript: ActionScript
+        html5: HTML5
+        javascript: JavaScript
+        reactjs: React.js
+        jquery: jQuery
+        angularjs: Angular.js
+        fullstack: 全端
+        mobile: 行動開發
+        android: Android
+        obj_c: Objective-C
+        swift: Swift
+        test: 測試工程
+        test_engineer: Testing Enginner
+        test_other: 其他
+        data: 資料分析
+        data_analytics: Data Analytics
+        data_other: 其他
+        technical_high: 高階職位
+        technical_manager: Technical Manager
+        director_of_engineering: Director of Engineering
+        architect: Architect
+        cto: CTO
+        security_engineer: Security Engineer
+        technical_high_other: 其他
+        product_and_project: 產品/專案
+        product: 產品經理
+        product_manager: Product Manager
+        a_product_manager: Associate Product Manager
+        product_other: 其他
+        project: 專案經理
+        project_manager: Project Manager
+        a_project_manager: Associate Project Manager
+        project_other: 其他
+        pp_high: 高階職位
+        senior_project_manager: Senior Project Manager
+        senior_product_manager: Senior Product Manager
+        pp_high_other: 其他
+        design: 設計
+        ui: UI 設計
+        web_ui_designer: Web UI Designer
+        app_ui_designer: APP UI Designer
+        senior_web_ui_designer: Senior Web UI Designer
+        senior_app_ui_designer: Senior APP UI Designer
+        ui_other: 其他
+        ux: UX 設計
+        ux_designer: UX Designer
+        senior_ux_designer: Senior UX Designer
+        ux_other: 其他
+        art: 平面設計
+        graphic_designer: Graphic Designer
+        art_other: 其他
+        design_high: 高階職位
+        director_of_design: Director of Design
+        art_director: Art Director
+        ux_director: UX Director
+        ui_director: UI Director
+        ui_lead: UI Lead
+        ux_lead: UX Lead
+        design_high_other: 其他
+        sales: 業務
+        marketing: 行銷
+        other: 其他
+      place:
+        taipei_city: 臺北市
+        new_taipei_city: 新北市
+        taoyuan_city: 桃園市
+        taichung_city: 臺中市
+        tainan_city: 臺南市
+        kaohsiung_city: 高雄市
+        keelung_city: 基隆市
+        hsinchu_city: 新竹市
+        chiayi_city: 嘉義市
+        hsinchu_county: 新竹縣
+        miaoli_county: 苗栗縣
+        changhua_county: 彰化縣
+        nantou_county: 南投縣
+        yunlin_county: 雲林縣
+        chiayi_county: 嘉義縣
+        pingtung_county: 屏東縣
+        yilan_county: 宜蘭縣
+        hualien_county: 花蓮縣
+        taitung_county: 臺東縣
+        penghu_county: 澎湖縣
+        america: 美國
+        indonesia: 印尼
+        malaysia: 馬來西亞
+        singapore: 新加坡
+        thailand: 泰國
+        vietnam: 越南
+        china: 中國
+        japan: 日本
+        philippines: 菲律賓
+        other: 其他工作地點
+        remote: 遠端工作
+    intern_investigates:
+      user_status:
+        us_not_read: 提出申請
+        us_readed: 已讀
+        us_need_improve: 需修改
+        us_improved: 已修改
+        us_interview: 待面試
+      admin_status:
+        as_not_read: 未讀
+        as_todo: 待處理
+        as_need_improve: 需修改
+        as_improved: 已修改
+        as_need_interview: 待約面試
+        as_interview: 已約面試
+        as_verify: 已審核
+      evaluation:
+        no_evaluation: 尚未評價
+        normal: 普通
+        good: 優質
+    sudo_investigates:
+      user_status:
+        verifying: 審核中
+        need_improve: 需修改
+        interview: 已約面試
+        approve: 已審核
+        already_update: 已修改
+      admin_status:
+        not_read: 未讀
+        todo: 待處理
+        need_improve: 需修改
+        already_update: 已修改
+        improved: 已修改
+        need_interview: 待約面試
+        interview: 已約面試
+        approve: 已審核
+      evaluation:
+        no_evaluation: 尚未評價
+        normal: 普通
+        good: 優質
+    investigate_commits:
+      change_status:
+        not_read: 未讀
+        todo: 待處理
+        need_improve: 需修改
+        improved: 已修改
+        need_interview: 待約面試
+        interview: 已約面試
+        verify: 已審核
+    intern_apply_jobs:
+      corp_status:
+        all: 全部
+        cs_not_verify: 尚未審核
+        cs_not_read: 未讀
+        cs_need_interview: 約面試
+        cs_reject: 不合適
+        cs_todo: 待處理
+        cs_archive: 歸檔
+      user_status:
+        us_not_read: 成功申請
+        us_readed: 已讀
+        us_reject: 不適合
+        us_archive: 歸檔
+    user_educations:
+      degree:
+        high_school: 高中
+        bachelor: 學士
+        master: 碩士
+        phd: 博士
+        other: 其他
+    job_referrals:
+      user_status:
+        alread_apply: 已投遞履歷
+        get_offer: 申請獎勵
+        award_apply: 申請受理中
+        award_complete: 已領取
+        apply_failed: 推薦失敗
+    beta_features:
+      feature:
+        job_referral: 邀請職缺
