@@ -45,7 +45,7 @@ class WordDefination extends React.Component {
         <h2>{this.props.currentWord}</h2>
         {this.renderLocales()}
 
-        <button className="SaveDictionary">儲存</button>
+        <button onClick={} className="SaveDictionary">儲存</button>
       </div>
     );
   }
