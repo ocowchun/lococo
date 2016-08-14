@@ -13,7 +13,7 @@ export default class DictionaryIndexPage extends React.Component {
     return (
       <div>
         <h2> 歡迎來到 Locco </h2>
-        <p> 開始進行翻譯，請選單列表選擇檔案 </p>
+        <p> 開始進行翻譯，請至選單列表選擇檔案 </p>
       </div>
     );
   }
