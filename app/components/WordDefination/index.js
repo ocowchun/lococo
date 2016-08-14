@@ -35,9 +35,9 @@ class WordDefination extends React.Component {
     let locales = [];
     for(let props in this.props.word) {
       locales.push(
-        <div key={uuid()} className="WordGroup">
+        <div key={uuid()} className="form-group">
           <label>{props}</label>
-          <input ref={props} defaultValue={this.props.word[props]} />
+          <input type="text" ref={props} defaultValue={this.props.word[props]} />
           <button className="btn" value={props} onClick={this.onEditButtonClick.bind(this)}>修改</button>
         </div>
       );
@@ -48,8 +48,8 @@ class WordDefination extends React.Component {
 
   render() {
     return (
-      <div>
-        <h2>{this.props.currentWord}</h2>
+      <div style={{marginTop: '20px'}}>
+        <h2 style={{textAlign: 'center'}}>目前字彙為：{this.props.currentWord}</h2>
         {this.renderLocales()}
 
         <button className="btn" onClick={this.onSaveButtonClick.bind(this)}>儲存</button>
