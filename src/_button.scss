@@ -1,0 +1,29 @@
+%btn-panel {
+	display: inline-block;
+	padding: 8px 15px;
+	
+	color: #fff;
+	background-color: c("main");
+
+	border: 1px; /* remove button default border */
+	border-color: transparent;
+	border-radius: 3px;
+
+	&:hover {
+	  box-shadow: 0 0 1px 1px darken(c("em2"), 20%);
+	}
+}
+
+.btn {
+  @extend %btn-panel;
+}
+
+.btn.small {
+  padding: 6px 10px;
+  font-size: 0.9rem;
+}
+
+.btn.large { 
+	padding: 10px 20px;
+	font-size: 1.1rem;
+}

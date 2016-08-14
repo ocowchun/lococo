@@ -3,6 +3,8 @@ import Style from './style.scss';
 
 import uuid from '../../utils/uuid';
 
+import ActionButton from '../ActionButton/';
+
 const propTypes = {
   currentWord: PropTypes.string.isRequired,
 	word: PropTypes.object.isRequired,
@@ -36,7 +38,7 @@ class WordDefination extends React.Component {
         <div key={uuid()} className="WordGroup">
           <label>{props}</label>
           <input ref={props} defaultValue={this.props.word[props]} />
-          <button value={props} onClick={this.onEditButtonClick.bind(this)}>修改</button>
+          <button className="btn" value={props} onClick={this.onEditButtonClick.bind(this)}>修改</button>
         </div>
       );
     }
@@ -50,7 +52,7 @@ class WordDefination extends React.Component {
         <h2>{this.props.currentWord}</h2>
         {this.renderLocales()}
 
-        <button onClick={this.onSaveButtonClick.bind(this)} className="SaveDictionary">儲存</button>
+        <button className="btn" onClick={this.onSaveButtonClick.bind(this)}>儲存</button>
       </div>
     );
   }

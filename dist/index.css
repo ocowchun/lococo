@@ -417,6 +417,26 @@ ul {
   .menu li ~ li:hover {
     background-color: #24797e; }
 
+.btn {
+  display: inline-block;
+  padding: 8px 15px;
+  color: #fff;
+  background-color: #3fc1c9;
+  border: 1px;
+  /* remove button default border */
+  border-color: transparent;
+  border-radius: 3px; }
+  .btn:hover {
+    box-shadow: 0 0 1px 1px #46cbb2; }
+
+.btn.small {
+  padding: 6px 10px;
+  font-size: 0.9rem; }
+
+.btn.large {
+  padding: 10px 20px;
+  font-size: 1.1rem; }
+
 * {
   box-sizing: border-box; }
 
