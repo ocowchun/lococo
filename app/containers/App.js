@@ -81,8 +81,16 @@ class App extends Component {
     const actions = this.props.actions;
     const currentRoute = this.props.route.currentRoute;
     let pages = {}
-    pages['main'] = () => <DictionaryIndexPage dictionary={dictionary} actions={actions} />
-    pages['dictionaryShow'] = () => <DictionaryPage dictionary={dictionary} actions={actions} />
+    pages['main'] = () => <DictionaryIndexPage />
+    pages['dictionaryShow'] = () => 
+          <WordDefination
+            currentWord={this.props.dictionary.currentWord}
+            word={this.props.word}
+            addWord={this.props.actions.addWord}
+            saveDictionary={this.props.actions.saveDictionary}
+            readWord={this.props.actions.readWord}
+            readWordGroup={this.props.actions.readWordGroup}
+          />
 
     if (pages[currentRoute]) {
       return pages[currentRoute]()
@@ -99,14 +107,7 @@ class App extends Component {
           {...this.props}
         />
         <div className="container menu-offset">
-          <WordDefination
-            currentWord={this.props.dictionary.currentWord}
-            word={this.props.word}
-            addWord={this.props.actions.addWord}
-            saveDictionary={this.props.actions.saveDictionary}
-            readWord={this.props.actions.readWord}
-            readWordGroup={this.props.actions.readWordGroup}
-          />
+          {this.renderPages()}
         </div>
       </div>
     );

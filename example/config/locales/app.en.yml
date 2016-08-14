@@ -113,6 +113,7 @@ en:
         docker: Docker
         openstack: OpenStack
         fabric: Fabric
+        brainfuck: hello
   activerecord:
     models:
       corp_user: ‘Employer Account'

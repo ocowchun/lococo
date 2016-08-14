@@ -420,6 +420,7 @@ ul {
 .btn {
   display: inline-block;
   padding: 8px 15px;
+  margin-left: 5px;
   margin-right: 5px;
   color: #fff;
   background-color: #3fc1c9;
@@ -452,6 +453,18 @@ ul {
   border: 1px solid #3fc1c9; }
   .form-group input[type="text"]:focus {
     outline: none; }
+
+.message-notifier {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 50px;
+  padding: 15px;
+  text-align: center;
+  color: #fff;
+  background-color: #f9cb27; }
 
 * {
   box-sizing: border-box; }

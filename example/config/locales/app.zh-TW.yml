@@ -113,6 +113,7 @@ zh-TW:
         docker: Docker
         openstack: OpenStack
         fabric: Fabric
+        brainfuck: hello
   activerecord:
     models:
       corp_user: 企業會員
