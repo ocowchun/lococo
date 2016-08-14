@@ -1,4 +1,5 @@
 import React, { PropTypes } from 'react';
+import { dialog } from 'electron';
 
 import MenuItem from '../MenuItem/index.js';
 
@@ -66,6 +67,7 @@ export default class Navbar extends React.Component {
   render() {
     return (
       <nav className="menu">
+        <h3>Locoo</h3>
     		<ul>
           {this.renderMenuItems()}
         </ul>

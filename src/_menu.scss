@@ -15,15 +15,16 @@
 
 	ul > li { 
 		position: relative; /* positioning */
+		padding: 3px;
 		margin-bottom: 8px;
 	
 		font-size: 1rem;
 		color: lighten(c("main"), 35%);
 		cursor: pointer;
 
-		transition: .3s ease all;
+		transition: .2s ease-out all;
 
 		&:last-child { margin-bottom: 0; }
-		
 	}
+	li ~ li:hover { background-color: darken(c("main"), 20%); }
 }

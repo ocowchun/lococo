@@ -381,7 +381,11 @@ textarea {
 /* Import Reset */
 body, html {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 18px; }
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased; }
+
+h1, h2, h3 {
+  margin-top: 0; }
 
 ul {
   padding-left: 15px;
@@ -402,13 +406,16 @@ ul {
   .menu ul > li {
     position: relative;
     /* positioning */
+    padding: 3px;
     margin-bottom: 8px;
     font-size: 1rem;
     color: #caeef0;
     cursor: pointer;
-    transition: .3s ease all; }
+    transition: .2s ease-out all; }
     .menu ul > li:last-child {
       margin-bottom: 0; }
+  .menu li ~ li:hover {
+    background-color: #24797e; }
 
 * {
   box-sizing: border-box; }
