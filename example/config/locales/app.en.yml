@@ -128,7 +128,7 @@ en:
         website: Website
       corp_user:
         name: Name
-        phone: Tele
+        phone: Telephone
         email: Email
         password: Password
         password_confirmation: Confirm Password

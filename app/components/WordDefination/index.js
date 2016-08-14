@@ -77,6 +77,8 @@ class WordDefination extends React.Component {
     return (
       <div style={{marginTop: '20px'}}>
         <h2 style={{textAlign: 'center'}}>目前字彙為：{this.props.currentWord}</h2>
+        <p style={{textAlign: 'center'}}>預設值為：<strong style={{textDecoration: 'underline'}}>{this.props.word['zh-TW'] || ''}</strong></p>
+
         {this.renderLocales()}
 
         <div style={{marginBottom: '10px'}} className="action-group">
