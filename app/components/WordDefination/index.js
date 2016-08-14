@@ -1,6 +1,6 @@
 import React, { PropTypes } from 'react';
-import Style from './style.scss';
-
+import Style from './style.css';
+console.log(Style);
 import uuid from '../../utils/uuid';
 
 import ActionButton from '../ActionButton/';
@@ -75,8 +75,8 @@ class WordDefination extends React.Component {
 
   render() {
     return (
-      <div style={{marginTop: '20px'}}>
-        <h2 style={{textAlign: 'center'}}>目前字彙為：{this.props.currentWord}</h2>
+      <div className={Style.container}>
+        <h2 className={Style.header} style={{textAlign: 'center'}}>目前字彙為：{this.props.currentWord}</h2>
         <p style={{textAlign: 'center'}}>預設值為：<strong style={{textDecoration: 'underline'}}>{this.props.word['zh-TW'] || ''}</strong></p>
 
         {this.renderLocales()}
