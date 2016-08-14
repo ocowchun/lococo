@@ -1,4 +1,4 @@
-.menu {
+@include block("menu") {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -11,6 +11,19 @@
 	font-size: 16px;
   color: #fff;
 	
-	background-color: blue;
-}
+	background-color: darken(c("main"), 5%);
 
+	ul > li { 
+		position: relative; /* positioning */
+		margin-bottom: 8px;
+	
+		font-size: 1rem;
+		color: lighten(c("main"), 35%);
+		cursor: pointer;
+
+		transition: .3s ease all;
+
+		&:last-child { margin-bottom: 0; }
+		
+	}
+}

@@ -2,6 +2,11 @@ import React, { PropTypes } from 'react';
 
 import MenuItem from '../MenuItem/index.js';
 
+require('./style.scss');
+
+
+
+
 const propTypes = {
   actions: PropTypes.object.isRequired,
   dictionary: PropTypes.shape({

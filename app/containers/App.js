@@ -23,9 +23,6 @@ import DictionaryPage from '../components/DictionaryPage';
 import Menu from '../components/Menu';
 import WordDefination from '../components/WordDefination';
 
-require('../../dist/index.css');
-
-
 class App extends Component {
   componentWillMount() {
     const receiveFiles = this.props.actions.receiveFiles;

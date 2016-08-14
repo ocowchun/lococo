@@ -1,6 +1,16 @@
+/* Import normalize setting and mixin */
 @import "../bower_components/sexy/src/normalize";
 @import "../bower_components/sexy/src/components/mixins/index";
-@import "./_menu.scss";
+
+/* Import Color and variables */
+@import "./_colors";
+
+/* Import Reset */
+@import "./_reset";
+
+/* Import Module */
+@import "./_menu";
+
 
 * {
   box-sizing: border-box;

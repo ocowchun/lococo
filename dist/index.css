@@ -1,3 +1,4 @@
+/* Import normalize setting and mixin */
 /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
@@ -373,6 +374,20 @@ textarea {
 /*
  * @param
 */
+/* Import Color and variables */
+/**
+ * alias method for @function [color]
+ */
+/* Import Reset */
+body, html {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 18px; }
+
+ul {
+  padding-left: 15px;
+  -webkit-padding-start: 15px; }
+
+/* Import Module */
 .menu {
   position: absolute;
   top: 0;
@@ -383,7 +398,17 @@ textarea {
   padding: 20px;
   font-size: 16px;
   color: #fff;
-  background-color: blue; }
+  background-color: #34b2ba; }
+  .menu ul > li {
+    position: relative;
+    /* positioning */
+    margin-bottom: 8px;
+    font-size: 1rem;
+    color: #caeef0;
+    cursor: pointer;
+    transition: .3s ease all; }
+    .menu ul > li:last-child {
+      margin-bottom: 0; }
 
 * {
   box-sizing: border-box; }

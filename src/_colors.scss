@@ -1,0 +1,23 @@
+$colorPlattes: (
+  main: #3fc1c9,
+  sub: #fce38a,
+	word: #333,
+	em1: #eaffd0,
+	em2: #95e1d3
+);
+
+@function color($key) {
+	@if map-has-key($colorPlattes, $key) {
+	  @return map-get($colorPlattes, $key);	
+	} @else {
+		@warn "Unknown Key #{$key}";
+	}
+}
+
+/**
+ * alias method for @function [color]
+ */
+
+@function c($key) {
+  @return color($key);
+}
