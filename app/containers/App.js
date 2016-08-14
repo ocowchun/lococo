@@ -86,7 +86,7 @@ class App extends Component {
     pages['main'] = () => <DictionaryIndexPage />
     pages['dictionaryShow'] = () => 
           <WordDefination
-            currentWord={this.props.dictionary.currentWord}
+            currentWord={this.props.dictionary.currentWord || ''}
             word={this.props.word}
             addWord={this.props.actions.addWord}
             saveDictionary={this.props.actions.saveDictionary}

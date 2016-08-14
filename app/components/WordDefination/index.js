@@ -25,6 +25,14 @@ class WordDefination extends React.Component {
     this.refs.wordValue.value = '';
   }
 
+  shouldShow() {
+    if(this.props.currentWord === '') {
+      return { display: 'none' }
+    } else {
+      return { display: 'block' }
+    }
+  }
+
   onEditButtonClick(e) {
     const currentValue = this.refs[e.target.value].value;
     const locale       = e.target.value;
@@ -75,7 +83,7 @@ class WordDefination extends React.Component {
 
   render() {
     return (
-      <div className={Style.container}>
+      <div className={Style.container} style={this.shouldShow()}>
         <h2 className={Style.header} style={{textAlign: 'center'}}>目前字彙為：{this.props.currentWord}</h2>
         <p style={{textAlign: 'center'}}>預設值為：<strong style={{textDecoration: 'underline'}}>{this.props.word['zh-TW'] || ''}</strong></p>
 

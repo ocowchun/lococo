@@ -450,10 +450,12 @@ ul {
 
 .form-group input[type="text"] {
   height: calc(1rem + 8px);
+  padding: 6px;
   font-size: .9rem;
   border: 1px solid #3fc1c9; }
   .form-group input[type="text"]:focus {
-    outline: none; }
+    outline: none;
+    box-shadow: 0 0 1px 1px #3fc1c9; }
 
 .message-notifier {
   position: fixed;
