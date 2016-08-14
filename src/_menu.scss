@@ -11,6 +11,7 @@
 	font-size: 16px;
   color: #fff;
 	
+	border-right: 1px solid darken(c("main"), 10%);
 	background-color: darken(c("main"), 5%);
 
 	ul > li { 
@@ -28,5 +29,5 @@
 	}
 	li ~ li:hover { background-color: darken(c("main"), 20%); }
 
-	
+
 }
