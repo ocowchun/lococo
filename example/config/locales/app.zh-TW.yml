@@ -245,7 +245,7 @@ zh-TW:
     apply_job_commits:
       status:
         apply: 成功申請
-        sudo_read: Sudo 已讀
+        sudo_read: Sudo
         sudo_interview: Sudo 面談
         to_company: 送至公司
         reject: 不適合

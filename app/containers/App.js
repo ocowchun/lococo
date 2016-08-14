@@ -104,6 +104,8 @@ class App extends Component {
             word={this.props.word}
             addWord={this.props.actions.addWord}
             saveDictionary={this.props.actions.saveDictionary}
+            readWord={this.props.actions.readWord}
+            readWordGroup={this.props.actions.readWordGroup}
           />
         </div>
       </div>

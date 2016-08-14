@@ -77,7 +77,7 @@ export function addWord(word, defination, locale) {
   };
   
   ipcRenderer.send(ADD_WORD, wordDefination);
-
+  
   return {
   	type: ADD_WORD,
   	wordDefination

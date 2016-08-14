@@ -10,6 +10,8 @@ const propTypes = {
 	word: PropTypes.object.isRequired,
 	addWord: PropTypes.func.isRequired,
   saveDictionary: PropTypes.func.isRequired,
+  readWord: PropTypes.func.isRequired,
+  readWordGroup: PropTypes.func.isRequired,
 };
 
 class WordDefination extends React.Component {
@@ -18,17 +20,42 @@ class WordDefination extends React.Component {
     super(props);
   }
 
+  clearInputValue() {
+    this.refs.wordKey.value = '';
+    this.refs.wordValue.value = '';
+  }
+
   onEditButtonClick(e) {
     const currentValue = this.refs[e.target.value].value;
     const locale       = e.target.value;
     const { currentWord, addWord } = this.props;
     
     addWord(currentWord, currentValue, locale);
+
   }
 
   onSaveButtonClick(e) {
     const { saveDictionary } = this.props;
     saveDictionary();
+  }
+
+  onAddValueButtonClick(e) {
+    const { addWord, readWord, readWordGroup } = this.props;
+    const curWordArr = this.props.currentWord.split('.');
+    const lastWord = curWordArr[curWordArr.length - 1];
+
+    const wordKey = this.refs.wordKey.value;
+    const wordValue = this.refs.wordValue.value;
+
+    const currentDir = curWordArr.slice(0, curWordArr.length - 1).join('.');
+    const defaultLocale = 'zh-TW';
+    
+    addWord(`${currentDir}.${wordKey}`, wordValue, defaultLocale);
+    readWordGroup(currentDir);
+    readWord(`${currentDir}.${wordKey}`);
+    
+
+    this.clearInputValue();
   }
 
   renderLocales() {
@@ -52,7 +79,19 @@ class WordDefination extends React.Component {
         <h2 style={{textAlign: 'center'}}>目前字彙為：{this.props.currentWord}</h2>
         {this.renderLocales()}
 
-        <button className="btn" onClick={this.onSaveButtonClick.bind(this)}>儲存</button>
+        <div style={{marginBottom: '10px'}} className="action-group">
+          <button className="btn" onClick={this.onSaveButtonClick.bind(this)}>儲存</button>
+        </div>
+
+        <div style={{marginBottom: '10px'}} className="action-group">
+          <div className="form-group">
+            <label>新增字彙</label>
+            <input ref="wordKey" type="text" placeholder="在此新增key..." />：
+            <input ref="wordValue" type="text" placeholder="在此新增value..." />
+            <button className="btn" onClick={this.onAddValueButtonClick.bind(this)}>新增字彙</button>
+            <small> <strong>(將在本目錄下新增此字彙)</strong></small>
+          </div>
+        </div>
       </div>
     );
   }

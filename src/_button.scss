@@ -1,13 +1,15 @@
 %btn-panel {
 	display: inline-block;
 	padding: 8px 15px;
+	margin-right: 5px;
 	
 	color: #fff;
 	background-color: c("main");
 
-	border: 1px; /* remove button default border */
-	border-color: transparent;
+	border: 0;
 	border-radius: 3px;
+
+	cursor: pointer;
 
 	&:hover {
 	  box-shadow: 0 0 1px 1px darken(c("em2"), 20%);
@@ -16,6 +18,7 @@
 
 .btn {
   @extend %btn-panel;
+	&:last-child { margin-right: 0; }
 }
 
 .btn.small {
