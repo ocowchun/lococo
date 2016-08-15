@@ -15,6 +15,11 @@ export default function counter(state = initState(), action) {
       return _.extend({}, state, {
         dir: action.dir
       });
+
+    case RECEIVE_KEYS: 
+      console.log('reducer RECEIVE_KEYS');
+      console.log(action);
+      return state;
     default:
       return state;
   }

@@ -5,8 +5,9 @@ var config = {};
 // /Users/ocowchun/projects/github/lococo/example/config/locales/app.en.yml
 
 Dictionary.loadDictionary(files, config).then(function(dictionary) {
-	var result=dictionary.listKeys('');
-	console.log(result)
+	var result= dictionary.listKeys('activemodel.attributes.profile');
+	console.log(result);
+	
 })
 
 // console.log(files)

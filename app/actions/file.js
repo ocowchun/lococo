@@ -1,4 +1,5 @@
-const {  ipcRenderer} = require('electron');
+const { ipcRenderer } = require('electron');
+
 export const PING_MESSAGE = 'PING_MESSAGE';
 export const PONG_MESSAGE = 'PONG_MESSAGE';
 export const RECEIVE_FILES = 'RECEIVE_FILES';
@@ -24,8 +25,8 @@ export function receiveFiles(data) {
   let {dictionaries,dir}=data;
   return {
     type: RECEIVE_FILES,
-    dictionaries:dictionaries,
-    dir:dir
+    dictionaries,
+    dir
   };
 }
 
@@ -33,15 +34,14 @@ export function receiveKeys(data) {
   let {keys,currentDictionary,currentDir}=data;
   return {
     type: RECEIVE_KEYS,
-    keys:keys,
-    currentDictionary:currentDictionary,
-    currentDir:currentDir
+    keys,
+    currentDictionary,
+    currentDir
   };
 }
 
 
 export function clickDictionary(dic) {
-  console.log('@@')
   ipcRenderer.send('clickDictionary', dic);
   return {
     type: CLICK_DICTIONARY,

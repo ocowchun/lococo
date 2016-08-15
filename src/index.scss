@@ -1,0 +1,32 @@
+/* Import normalize setting and mixin */
+@import "../bower_components/sexy/src/normalize";
+@import "../bower_components/sexy/src/components/mixins/index";
+
+/* Import Color and variables */
+@import "./_colors";
+
+/* Import Reset */
+@import "./_reset";
+
+/* Import Module */
+@import "./_menu";
+@import "./_button";
+@import "./_input";
+@import "./_message-notifier";
+
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+	width: 90%;
+	max-width: 1280px;
+
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.menu-offset {
+	padding-left: 300px;
+}

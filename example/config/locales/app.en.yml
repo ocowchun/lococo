@@ -1,5 +1,626 @@
-zh-TW:
-  controller:
-    home:
-      index: "首頁"
-      
+en:
+  activemodel:
+    attributes:
+      profile:
+        android: Android
+        dotnet: .NET
+        cpp: C++
+        c: C
+        js: JavaScript
+        css: HTML/CSS
+        sass: Sass
+        less: Less
+        coffee: CoffeeScript
+        type_script: TypeScript
+        nodejs: Node.js
+        php: PHP
+        python: Python
+        ruby: Ruby
+        java: Java
+        scala: Scala
+        devops: DevOps
+        obj_c: Objective-C
+        swift: Swift
+        city: Location
+        wish: ' Wishing Well, Wish for Your Dream Job'
+        skill_description: Description of skills
+        interested_job: Job Preference
+        taipei: Taipei
+        new_taipei: New Taipei
+        hsinchu: Hsinchu
+        taichung: Taichung
+        tainan: Tainan
+        kaohsiung: Kaohsiung
+        others: Others
+        nangang_neihu: Nangang/Neihu
+        daan_songshan: Da’an/Songshan
+        xinyi: Xinyi
+        zhongzheng_zhongshan: Zhongzheng/Zhongshan
+        taipei_others: Others
+        wugu_sanchong: Wugu/Sanchong
+        tucheng_banqiao: Tucheng/Banqiao
+        zhonghe_yonghe: Zhonghe/Yonghe
+        xindian: Xindian
+        xizhi: Xizhi
+        new_taipei_others: Others
+        db2: DB2
+        oracle: Oracle DB
+        mysql: MySQL
+        postgres: PostgreSQL
+        redis: Redis
+        mongodb: MongoDB
+        elasticsearch: Elasticsearch
+        hbase: HBase
+        sql_server: SQL Server
+        couchdb: CouchDB
+        neo4j: Neo4j
+        cassandra: Cassandra
+        hadoop: Hadoop
+        spark: Spark
+        gulp: Gulp
+        yeoman: Yeoman
+        grunt: Grunt
+        git: Git
+        svn: SVN
+        mercurial: Mercurial
+        aws: AWS
+        azure: Azure
+        gce: GCE
+        jenkins: Jenkins
+        jquery: jQuery
+        angular: AngularJS
+        backbone: Backbone.js
+        ember: Ember.js
+        react: React
+        meteor: Meteor
+        d3: D3.js
+        spine: Spine
+        flux: Flux
+        bootstrap: Bootstrap
+        foundation: Foundation
+        kube: Kube
+        semantic_ui: Semantic UI
+        express: Express
+        loopback: LoopBack
+        sails: Sails.js
+        koa: Koa
+        socket_io: Socket.io
+        ci: CodeIgniter
+        laravel: Laravel
+        wordpress: WordPress
+        joomla: Joomla!
+        phalcon: Phalcon
+        symfony2: Symfony
+        zen_framework: Zend Framework
+        cakephp: CakePHP
+        django: Django
+        falcon: Falcon
+        flask: Flask
+        rails: Ruby on Rails
+        sinatra: Sinatra
+        rspec: RSpec
+        spring: Spring Framework
+        hibernate: Hibernate
+        gwt: GWT
+        struts: Struts
+        play: Play
+        lift: Lift
+        scalatra: Scalatra
+        chef: Chef
+        puppet: Puppet
+        ansible: Ansible
+        vagrant: Vagrant
+        docker: Docker
+        openstack: OpenStack
+        fabric: Fabric
+        brainfuck: hello
+  activerecord:
+    models:
+      corp_user: ‘Employer Account'
+    attributes:
+      company_form:
+        name: Registered Company Name
+        bid: Invoice Number
+        address: Address
+        contact_name: Name
+        contact_phone: Tele
+        contact_mail: Email
+        website: Website
+      corp_user:
+        name: Name
+        phone: Telephone
+        email: Email
+        password: Password
+        password_confirmation: Confirm Password
+        terms_of_service: Terms of Service
+        current_password: Enter Current Password
+      user:
+        name: User Name
+        email: Email
+        password: Password
+        new_password: Password
+        password_confirmation: Confirm Password
+        new_password_confirmation: Confirm Password
+        current_password: Enter Current Password
+        phone: Tele
+      company:
+        country: Country
+        bid: Invoice Number
+        name: Company Name
+        county: County
+        dist: District
+        street: Street
+        phone: Tele
+        email: Email
+        cover: Profile Display
+        pic1: Page One
+        pic2: Page Two
+        pic3: Page Three
+        logo: Logo
+        introduction: Introduction
+        website: Website Link
+        applier: Candidate
+        slogan: Slogan
+        feature: Features
+        headline2: Company Features
+        introduction2: Special Features
+        outline: Company Outline
+        quote1: ’ Testimonial from Employee 1’
+        quote2: ’ Testimonial from Employee 2’
+        quote_user1: ' Employee 1'
+        quote_user2: ' Employee 2'
+        industy: Industry
+        fb: Facebook Fan Page
+        hh_ability: Access To Premier Account
+        general_ability: Access To Standard User Account
+        intern_ability: Access to Internship Account
+        category1: Primary Industry
+        category2: Secondary Industry
+        information_score: Information Accuracy
+        experience_score: Interview Experience
+        environment_score: Company Environment
+        total_score: Company Review
+      job:
+        title: Job Title
+        job_type: Job Type
+        h_wage: Hourly Wage
+        m_wage: Monthly Wage
+        m_wage_range: Monthly Wage Range
+        y_wage_range: Annual Wage Range
+        wage_range: Annual Wage Range (NT$)
+        max_wage: Maximum Wage
+        min_wage: Minimum Wage
+        place: Location
+        content: Job Description
+        contact: How to apply
+        deadline: Deadline
+        state: Job Opening Status
+        deadline_type: Apply before...
+        county: Job Location (County/City)
+        responsibilities: Responsibilities
+        requirements: Requirements
+        headline1: 'Headline #1'
+        headline2: 'Headline #2'
+        headline3: 'Headline #3'
+        experience: Required experience
+        status: Job Opening Status
+        category: Job Type
+        tag_list: ' Technical Requirements Tag'
+        recruit_procress: 招聘流程
+      job_feedback:
+        information_score: Information Accuracy
+        experience_score: Interview Experience
+        environment_score: Company Environment
+      working_history:
+        company_name: Company Name
+        title: Job Title
+        start_year: Starting Year
+        start_month: Starting Month
+        end_year: Ending Year
+        end_month: Ending Month
+        current: Until Present
+        description: Job Description
+      user_education:
+        name: School Name
+        department: Major
+        graduate_year: Graduation Year
+        degree: Degree
+      recommendation:
+        message: Letter of Reference
+        name: Reference
+        email: Email
+      sudo_investigate:
+        interview_time: 面試時間
+        evaluation: 評價
+        interview_address: 面試地點
+        contact_name: 聯絡人
+        contact_phone: 聯絡電話
+      sudo_investigate_commit:
+        message: 回饋訊息
+      scripture:
+        name: Name
+        language: Programming Language
+      profile_comment:
+        message: Comment
+  enumerize:
+    apply_job_commits:
+      status:
+        apply: Application Successful
+        sudo_read: Read by Sudo
+        sudo_interview: Sudo Interview
+        to_company: Send to company
+        reject: >-
+          This job is not suitable for you, but there are still plenty more jobs
+          to explore!
+        company_read: Read by company
+        company_reject: >-
+          This job is not suitable for you, but there are still plenty more jobs
+          to explore!
+        company_interview: Company Interview
+        interview_done: Pending Result
+        interview_again: Reinterview
+        get_offer: Get Offer
+    company:
+      state:
+        verify: Pending Verification
+        approve: Approved
+        rejected: Rejected
+        draft: Draft
+      staff_count:
+        s1_10: 1-10
+        s11_50: 11-50
+        s51_200: 51-200
+        s201_500: 201-500
+        s501_1000: 501-1000
+        s1001_5000: 1001-5000
+        s5001_10000: 5001-10000
+        s10000up: 10000+
+        hidden_staff_count: Undisclosed
+      stage:
+        seed: Seed
+        angel: Angel
+        a: Series A
+        b: Series B
+        c: Series C
+        d: Series D
+        dup: Above Series D
+        public_market: IPO or OTC
+        hidden: Undisclosed
+        no_requirement: No Fundraising Requirement
+      level:
+        fulltime_level: Fulltime Account Access
+        intern_level: Internship Account Access
+        super_level: Premier Account Access
+      category:
+        all: 不限
+        not_select: Undisclosed
+        mobile: Mobile Internet
+        ec: E-Commerce
+        life: Life
+        o2o: O2O
+        culture: Creative Industry
+        game: Games
+        travel: Travel
+        health: Healthcare
+        education: Education
+        financial: Banking and Insurance
+        enterprise: Corporate Services
+        advertisement: Marketing and Advertising
+        data: Data Analytics
+        security: Information Security
+        social: Social Media
+        content: Content Media
+        iot: IOT
+        tool: Tools & Software
+        other: Others
+      list:
+        not_select: Undisclosed
+    interested_job:
+      frontend: Frontend Engineer
+      backend: Backend Engineer
+      android: Android
+      ios: iOS
+      pm: Project Manager
+      ui: UI/UX
+      sales: Sales
+      marketing: Marketing
+      fullstack: Full Stack Developer
+      others: Others
+    apply_job:
+      status:
+        resume_uncomplete: Incomplete Resume
+        reject: This job is not suitable for you.
+        concat_uncomplete: Fill out contact information
+        not_read: Pending Processing
+        sudo_interview: Processing Application
+        company_interview: Pending Interview
+        cancel: Cancel application
+        approve: Hiring Process
+        done: Job Seeking Done
+      status_message:
+        resume_uncomplete: >-
+          Your resume is incomplete. Please go to "Edit Personal Resume" to
+          complete it and show us the best of you!
+        concat_uncomplete: >-
+          Application Successful. Don’t forget to complete more details in your
+          contact info
+        not_read: Application Successful
+      user_status:
+        apply: Application Successful
+        sudo_read: ReadRead by Sudo
+        sudo_interview: 'Interview With Sudo '
+        reject: >-
+          This job is not suitable for you, but there are still plenty more jobs
+          to explore!
+        to_company: Resume sent to company
+        company_read: Read by company
+        company_interview: Company Interview
+        wait_result: Pending Result
+        interview_again: Reinterview
+        get_offer: Get Offer
+        take_offer: Accept Offer
+        reject_offer: Reject Offer
+      admin_status:
+        not_read: Unread
+        todo: Pending Processing
+        need_interview: Pending Interview
+        interview: Interview Scheduled
+        sudo_reject: Rejected by Sudo
+        to_company: Resume sent to company
+        company_read: Read by company
+        company_need_interview: Help arrange interview
+        company_interview: 'Interview Scheduled '
+        interview_feedback: Interview Feedback
+        interview_again: Reinterview
+        company_reject: >-
+          This job is not suitable for you, but there are still plenty more jobs
+          to explore!
+        get_offer: Get Offer
+        take_offer: Accept Offer
+        reject_offer: Reject Offer
+        archive: Archive
+      corp_status:
+        none: None
+        not_read: Unread
+        todo: Pending
+        need_interview: Follow-up Interview
+        interview: Scheduled
+        interview_done: Interviewed
+        interview_again: Reinterview
+        reject: Rejected
+        get_offer: Give Offer
+        take_offer: Accept Offer
+        reject_offer: Decline Offer
+    corp_user:
+      locale:
+        en: English
+        zh-TW: 中文
+      status:
+        doing: Information is being filled'
+        verify: Under Verification
+        approve: Approved
+        invited: Invited
+    job:
+      experience:
+        unlimit: Unlimited
+        student: Student
+        graduated: Graduated this year
+        one_yr: Less than 1 Year
+        one_to_three: 1 to 3 Years
+        three_to_five: 3 to 5 Years
+        five_to_ten: 5 to 10 Years
+        ten_up: Over 10 Years
+      category:
+        frontend: Frontend Engineer
+        backend: Backend Engineer
+        android: Android Engineer
+        ios: iOS Engineer
+        pm: Project Manager
+        ui: UI/UX
+        sales: Sales
+        marketing: Marketing
+        others: Others
+        fullstack: Full Stack Developer
+      status:
+        close: Close
+        publish: Open
+      job_type:
+        hh: Headhunting
+        intern: Internship
+        general: Standard
+        fulltime: Fulltime
+        all: All
+      categories_options:
+        development: Technical Development
+        technical: Technical
+        backend: Backend
+        java: Java
+        python: Python
+        php: PHP
+        c_sharp: 'C#'
+        cpp: C++
+        go: Go
+        perl: Perl
+        j2ee: J2EE
+        hadoop: Hadoop
+        nodejs: Node.js
+        rails: Rails
+        dotnet: .NET
+        data_mining: Data Mining
+        algorithm: Algorithm
+        frontend: Frontend
+        actionscript: ActionScript
+        html5: HTML5
+        javascript: JavaScript
+        reactjs: React.js
+        jquery: jQuery
+        angularjs: Angular.js
+        fullstack: Full Stack
+        mobile: Mobile Development
+        android: Android
+        obj_c: Objective-C
+        swift: Swift
+        test: Test Engineer
+        test_engineer: Test Engineer
+        test_other: Others
+        data: Data Analytics
+        data_analytics: Data Analytics
+        data_other: Others
+        technical_high: Senior Position
+        technical_manager: Technical Manager
+        director_of_engineering: Director of Engineering
+        architect: Architect
+        cto: CTO
+        security_engineer: Security Engineer
+        technical_high_other: Others
+        product_and_project: Product/Project
+        product: Product Manager
+        product_manager: Product Manager
+        a_product_manager: Associate Product Manager
+        product_other: Others
+        project: Project Manager
+        project_manager: Project Manager
+        a_project_manager: Associate Project Manager
+        project_other: Others
+        pp_high: Senior Position
+        senior_project_manager: Senior Project Manager
+        senior_product_manager: Senior Product Manager
+        pp_high_other: Others
+        design: Design
+        ui: UI Design
+        web_ui_designer: Web UI Designer
+        app_ui_designer: APP UI Designer
+        senior_web_ui_designer: Senior Web UI Designer
+        senior_app_ui_designer: Senior APP UI Designer
+        ui_other: Others
+        ux: UX Design
+        ux_designer: UX Designer
+        senior_ux_designer: Senior UX Designer
+        ux_other: Others
+        art: Graphic Design
+        graphic_designer: Graphic Designer
+        art_other: Others
+        design_high: Senior Position
+        director_of_design: Director of Design
+        art_director: Art Director
+        ux_director: UX Director
+        ui_director: UI Director
+        ui_lead: UI Lead
+        ux_lead: UX Lead
+        design_high_other: Others
+        sales: Sales
+        marketing: Marketing
+        other: Others
+      place:
+        taipei_city: Taipei City
+        new_taipei_city: New Taipei City
+        taoyuan_city: Taoyuan City
+        taichung_city: Taichung City
+        tainan_city: Tainan City
+        kaohsiung_city: Kaohsiung City
+        keelung_city: Keelung City
+        hsinchu_city: Hsinchu City
+        chiayi_city: Chiayi City
+        hsinchu_county: Hsinchu County
+        miaoli_county: Miaoli County
+        changhua_county: Changhua County
+        nantou_county: Nantou County
+        yunlin_county: Yunlin County
+        chiayi_county: Chiayi County
+        pingtung_county: Pingtung County
+        yilan_county: Yilan County
+        hualien_county: Hualien County
+        taitung_county: Taitung County
+        penghu_county: Penghu County
+        america: America
+        indonesia: Indonesia
+        malaysia: Malaysia
+        singapore: Singapore
+        thailand: Thailand
+        vietnam: Vietnam
+        china: China
+        japan: Japan
+        philippines: Philippines
+        other: Other
+        remote: Remote
+    intern_investigates:
+      user_status:
+        us_not_read: Applied
+        us_readed: Read
+        us_need_improve: Needs Modification
+        us_improved: Modified
+        us_interview: Pending Interview
+      admin_status:
+        as_not_read: Unread
+        as_todo: Pending Processing
+        as_need_improve: Needs Modification
+        as_improved: Modified
+        as_need_interview: Interview Unscheduled
+        as_interview: Interview Scheduled
+        as_verify: Verified
+      evaluation:
+        no_evaluation: Not Evaluated
+        normal: Normal
+        good: Good
+    sudo_investigates:
+      user_status:
+        verifying: 審核中
+        need_improve: 需修改
+        interview: 已約面試
+        approve: 已審核
+        already_update: 已修改
+      admin_status:
+        not_read: 未讀
+        todo: 待處理
+        need_improve: 需修改
+        already_update: 已修改
+        improved: 已修改
+        need_interview: 待約面試
+        interview: 已約面試
+        approve: 已審核
+      evaluation:
+        no_evaluation: 尚未評價
+        normal: 普通
+        good: 優質
+    investigate_commits:
+      change_status:
+        not_read: Unread
+        todo: Pending Processing
+        need_improve: Needs Modification
+        improved: Modified
+        need_interview: Interview Unscheduled
+        interview: Interview Scheduled
+        verify: Verified
+    intern_apply_jobs:
+      corp_status:
+        all: All
+        cs_not_verify: Not Verified
+        cs_not_read: Unread
+        cs_need_interview: Arrange An Interview
+        cs_reject: Not suitable
+        cs_todo: Pending Processing
+        cs_archive: Archive
+      user_status:
+        us_not_read: Applied Successfully
+        us_readed: Read
+        us_reject: >-
+          This job is not suitable for you, but there are still plenty more jobs
+          to explore!
+        us_archive: Archive
+    user_educations:
+      degree:
+        high_school: 高中
+        bachelor: 學士
+        master: 碩士
+        phd: 博士
+        other: 其他
+    job_referrals:
+      user_status:
+        alread_apply: 已投遞履歷
+        get_offer: 申請獎勵
+        award_apply: 申請受理中
+        award_complete: 已領取
+        apply_failed: 推薦失敗
+    beta_features:
+      feature:
+        job_referral: 邀請職缺

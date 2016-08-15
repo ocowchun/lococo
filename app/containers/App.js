@@ -14,43 +14,67 @@ const {
 const {
   ipcRenderer
 } = require('electron');
-import * as Actions from '../actions'
-import DictionaryIndexPage from '../components/DictionaryIndexPage'
-import DictionaryPage from '../components/DictionaryPage'
 
+import * as Actions from '../actions'
+
+import DictionaryIndexPage from '../components/DictionaryIndexPage';
+import DictionaryPage from '../components/DictionaryPage';
+
+import Menu from '../components/Menu';
+import WordDefination from '../components/WordDefination';
+
+require('../../dist/index.css');
 
 class App extends Component {
   componentWillMount() {
     const receiveFiles = this.props.actions.receiveFiles;
     const receiveKeys = this.props.actions.receiveKeys;
 
-    // ipcRenderer.on('asynchronous-reply', (event, arg) => {
-    //   console.log(arg); // prints "pong"
-    //   pong();
-    // });
+    const { 
+      receiveWord,
+      receiveWordGroup,
+      receiveAddWord,
+      receiveSavedMessage
+    } = this.props.actions;
+
     ipcRenderer.on('receiveKeys', (event, data) => {
       console.log('ipc receiveKeys')
       console.log(data);
-      receiveKeys(data); // Prints "whoooooooh!"
+      receiveKeys(data);
     });
 
     ipcRenderer.on('receiveFiles', (event, data) => {
       console.log('ipc receiveFiles')
-      receiveFiles(data); // Prints "whoooooooh!"
+      receiveFiles(data);
+    });
+
+    ipcRenderer.on('readWord', (event, data) => {
+      console.log('ipc readWord');
+      receiveWord(data);
+    })
+
+    ipcRenderer.on('receiveWordGroup', (e, data) => {
+      console.log('ipc receive word gorup');
+      receiveWordGroup(data);
+    });
+
+    ipcRenderer.on('receiveAddWord', (e, data) => {
+      console.log('ipc receive word gorup');
+      receiveAddWord(data);
+    });
+
+    ipcRenderer.on('dictionarySaved', (e, data) => {
+      console.log('ipc receive word gorup');
+      receiveSavedMessage();
     });
   }
+
+  componentDidUpdate() {
+  }
+
   openFile() {
     const ping = this.props.actions.ping;
     ping();
-  }
-  render() {
-    return (
-      <div>
-        hello world!
-        <button onClick={this.openFile.bind(this)}>click</button>
-        {this.renderPages()}
-      </div>
-    );
   }
 
   renderPages() {
@@ -59,8 +83,16 @@ class App extends Component {
     const actions = this.props.actions;
     const currentRoute = this.props.route.currentRoute;
     let pages = {}
-    pages['main'] = () => <DictionaryIndexPage dictionary={dictionary} actions={actions} />
-    pages['dictionaryShow'] = () => <DictionaryPage dictionary={dictionary} actions={actions} />
+    pages['main'] = () => <DictionaryIndexPage />
+    pages['dictionaryShow'] = () => 
+          <WordDefination
+            currentWord={this.props.dictionary.currentWord || ''}
+            word={this.props.word}
+            addWord={this.props.actions.addWord}
+            saveDictionary={this.props.actions.saveDictionary}
+            readWord={this.props.actions.readWord}
+            readWordGroup={this.props.actions.readWordGroup}
+          />
 
     if (pages[currentRoute]) {
       return pages[currentRoute]()
@@ -68,6 +100,21 @@ class App extends Component {
       return pages['main']();
     }
   }
+
+  render() {
+    
+    return (
+      <div className="MainContent">
+        <Menu
+          {...this.props}
+        />
+        <div className="container menu-offset">
+          {this.renderPages()}
+        </div>
+      </div>
+    );
+  }
+
 }
 
 App.propTypes = {
@@ -75,23 +122,11 @@ App.propTypes = {
 }
 
 function mapStateToProps(state) {
-  console.log("====state===")
-  console.log(state)
   return state;
-// let {dir,files,dictionaries,keys,currentDictionaryDir,currentDictionary}=state.files
-
-// let props={dir,files,dictionaries,keys,currentDictionaryDir,currentDictionary}
-
-//   return props;
 }
 
 function mapDispatchToProps(dispatch) {
-  console.log("Actions")
-
-  console.log(Actions)
-    // return {
-    //   actions: [1, 2, 3]
-    // };
+  
   return {
     actions: bindActionCreators(Actions, dispatch)
   }

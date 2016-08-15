@@ -1,38 +1,20 @@
-import React, {  Component,  PropTypes} from 'react';
+import React from 'react';
 
-export default class DictionaryIndexPage extends Component {
+export default class DictionaryIndexPage extends React.Component {
+  static propTypes = {
+    name: React.PropTypes.string,
+  };
+
+  constructor(props) {
+    super(props);
+  }
+
   render() {
-    // console.log(this.props.todos)
     return (
       <div>
-<h2>DictionaryIndexPage</h2>
-{this.renderFiles()}
+        <h2> 歡迎來到 Locco </h2>
+        <p> 開始進行翻譯，請至選單列表選擇檔案 </p>
       </div>
     );
   }
-
-  renderFiles() {
-    let dictionaries=this.props.dictionary.dictionaries;
-    // let dictionaries = this.props.files.dictionaries;
-    let renderFileItem = this.renderFileItem;
-    let clickDictionary=this.clickDictionary.bind(this);
-    if (dictionaries.length === 0) {
-      return (<p>No files</p>)
-    } else {
-      return dictionaries.map(dic => renderFileItem(dic,clickDictionary))
-    }
-  }
-
-  renderFileItem(file,clickDictionary) {
-    return (<a key={file} onClick={()=>clickDictionary(file)}>{file}</a>);
-  }
-
-  clickDictionary(file){
-    const clickDictionary = this.props.actions.clickDictionary;
-clickDictionary(file);
-  }
 }
-
-// FilePages.propTypes = {
-//   actions: PropTypes.object.isRequired
-// }

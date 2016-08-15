@@ -1,0 +1,663 @@
+en:
+ activemodel:
+   attributes:
+     profile:
+       android: 'Android'
+       dotnet: '.NET'
+       cpp: 'C++'
+       c: 'C'
+       js: 'JavaScript'
+       css: 'HTML/CSS'
+       sass: 'Sass'
+       less: 'Less'
+       coffee: 'CoffeeScript'
+       type_script: 'TypeScript'
+       nodejs: 'Node.js'
+       php: 'PHP'
+       python: 'Python'
+       ruby: 'Ruby'
+       java: 'Java'
+       scala: 'Scala'
+       devops: 'DevOps'
+       obj_c: 'Objective-C'
+       swift: 'Swift'
+       city: 'Location'
+       wish: ' Wishing Well, Wish for Your Dream Job'
+       # 建議可寫成兩行: 工作許願池，盡情雖灑你的熱情創意
+       skill_description: 'Description of skills'
+       interested_job: 'Job Preference'
+       taipei: 'Taipei'
+       new_taipei: 'New Taipei'
+       hsinchu: 'Hsinchu'
+       taichung: 'Taichung'
+       tainan: 'Tainan'
+       kaohsiung: 'Kaohsiung'
+       others: 'Others'
+       nangang_neihu: 'Nangang/Neihu'
+       daan_songshan: 'Da’an/Songshan'
+       xinyi: 'Xinyi'
+       zhongzheng_zhongshan: 'Zhongzheng/Zhongshan'
+       taipei_others: 'Others'
+       wugu_sanchong: 'Wugu/Sanchong'
+       tucheng_banqiao: 'Tucheng/Banqiao'
+       zhonghe_yonghe: 'Zhonghe/Yonghe'
+       xindian: 'Xindian'
+       xizhi: 'Xizhi'
+       new_taipei_others: 'Others'
+       db2: 'DB2'
+       oracle: 'Oracle DB'
+       mysql: 'MySQL'
+       postgres: 'PostgreSQL'
+       redis: 'Redis'
+       mongodb: 'MongoDB'
+       elasticsearch: 'Elasticsearch'
+       hbase: 'HBase'
+       sql_server: 'SQL Server'
+       couchdb: 'CouchDB'
+       neo4j: 'Neo4j'
+       cassandra: 'Cassandra'
+       hadoop: 'Hadoop'
+       spark: 'Spark'
+       gulp: 'Gulp'
+       yeoman: 'Yeoman'
+       grunt: 'Grunt'
+       git: 'Git'
+       svn: 'SVN'
+       mercurial: 'Mercurial'
+       aws: 'AWS'
+       azure: 'Azure'
+       gce: 'GCE'
+       jenkins: 'Jenkins'
+       jquery: 'jQuery'
+       angular: 'AngularJS'
+       backbone: 'Backbone.js'
+       ember: 'Ember.js'
+       react: 'React'
+       meteor: 'Meteor'
+       d3: 'D3.js'
+       spine: 'Spine'
+       flux: 'Flux'
+       bootstrap: 'Bootstrap'
+       foundation: 'Foundation'
+       kube: 'Kube'
+       semantic_ui: 'Semantic UI'
+       express: 'Express'
+       loopback: 'LoopBack'
+       sails: 'Sails.js'
+       koa: 'Koa'
+       socket_io: 'Socket.io'
+       ci: 'CodeIgniter'
+       laravel: 'Laravel'
+       wordpress: 'WordPress'
+       joomla: 'Joomla!'
+       # 後面要接 "!" ?
+       phalcon: 'Phalcon'
+       symfony2: 'Symfony'
+       zen_framework: 'Zend Framework'
+       cakephp: 'CakePHP'
+       django: 'Django'
+       falcon: 'Falcon'
+       flask: 'Flask'
+       rails: 'Ruby on Rails'
+       sinatra: 'Sinatra'
+       rspec: 'RSpec'
+       spring: 'Spring Framework'
+       hibernate: 'Hibernate'
+       gwt: 'GWT'
+       struts: 'Struts'
+       play: 'Play'
+       lift: 'Lift'
+       scalatra: 'Scalatra'
+       chef: 'Chef'
+       puppet: 'Puppet'
+       ansible: 'Ansible'
+       vagrant: 'Vagrant'
+       docker: 'Docker'
+       openstack: 'OpenStack'
+       fabric: 'Fabric'
+ activerecord:
+    models:
+      corp_user: ‘Employer Account'
+      # 不確定此用法:企業會員
+    attributes:
+      company_form:
+        name: "Registered Company Name"
+        bid: 'Invoice Number'
+        address: 'Address'
+        # 精簡公司聯絡地址
+        contact_name: 'Name'
+        # 精簡聯絡人姓名
+        contact_phone: 'Tele'
+        # 精簡聯絡人電話
+        contact_mail: 'Email'
+        # 聯絡人信箱
+        website: 'Website'
+      corp_user:
+        name: 'Name'
+        # 聯絡人姓名
+        phone: 'Tele'
+        email: 'Email'
+        password: 'Password'
+        password_confirmation: 'Confirm Password'
+        terms_of_service: 'Terms of Service'
+        # Sudo 使用條款，需要加 sudo 嗎?
+        current_password: 'Enter Current Password'
+      user:
+        name: 'User Name'
+        email: 'Email'
+        password: 'Password'
+        new_password: 'Password'
+        password_confirmation: 'Confirm Password'
+        new_password_confirmation: 'Confirm Password'
+        current_password: 'Enter Current Password'
+        phone: 'Tele'
+      company:
+        country: 'Country'
+        bid: 'Invoice Number'
+        name: 'Company Name'
+        # 省略公司可接?
+        county: 'County'
+        dist: 'District'
+        street: 'Street'
+        # 公司街道巷弄，覺得可以只寫一個
+        phone: 'Tele'
+        email: 'Email'
+        cover: 'Profile Display'
+        # 公司列表顯示圖
+        pic1: 'Page One'
+        # 前面應該有說這是公司內頁的展示，所以應該可以省略"公司內頁"的部分
+        pic2: 'Page Two'
+        # 同上
+        pic3: 'Page Three'
+        # 同上
+        logo: 'Logo'
+        introduction: 'Introduction'
+        website: 'Website Link'
+        applier: 'Candidate'
+        slogan: 'Slogan'
+        feature: 'Features'
+        headline2: 'Company Features'
+        introduction2: 'Special Features'
+        # 覺得可以直接用特色代替 公司特色內容'
+        outline: 'Company Outline'
+        # 公司列表簡述
+        quote1: ’ Testimonial from Employee 1’
+        # 同事的話1，不知道加 # 效果如何
+        quote2: ’ Testimonial from Employee 2’
+        quote_user1: ' Employee 1'
+        # 同事1
+        quote_user2: ' Employee 2'
+        # 同事2
+        industy: 'Industry'
+        fb: 'Facebook Fan Page'
+        hh_ability: 'Access To Premier Account'
+        # 獵頭職缺權限
+        general_ability: 'Access To Standard User Account'
+        # 非獵頭職缺權限
+        intern_ability: 'Access to Internship Account'
+        # 'Internship'權限
+        category1: 'Primary Industry'
+        category2: 'Secondary Industry'
+        information_score: Information Accuracy
+        experience_score: Interview Experience
+        environment_score: Company Environment
+        total_score: Company Review
+      job:
+        title: 'Job Title'
+        job_type: 'Job Type'
+        h_wage: 'Hourly Wage'
+        m_wage: 'Monthly Wage'
+        m_wage_range: 'Monthly Wage Range'
+        y_wage_range: 'Annual Wage Range'
+        wage_range: 'Annual Wage Range (NT$)'
+        max_wage: 'Maximum Wage'
+        min_wage: 'Minimum Wage'
+        place: 'Location'
+        # 工作地點
+        content: 'Job Description'
+        contact: 'How to apply'
+        deadline:  'Deadline'
+        state: 'Job Opening Status'
+        deadline_type: 'Apply before...'
+        county: 'Job Location (County/City)'
+        responsibilities: 'Responsibilities'
+        # 為何叫內容2?
+        requirements: 'Requirements'
+        # 為何叫內容3?
+        headline1: 'Headline #1'
+        # 標題是怎樣的Headline－需要圖做對照
+        headline2: 'Headline #2'
+        headline3: 'Headline #3'
+        experience: 'Required experience'
+        status: 'Job Opening Status'
+        # 職缺狀態
+        category: 'Job Type'
+        tag_list: ' Technical Requirements Tag'
+        # 職缺技術標籤
+      job_feedback:
+        information_score: Information Accuracy
+        experience_score: Interview Experience
+        environment_score: Company Environment
+      working_history:
+        company_name: 'Company Name'
+        title: 'Job Title'
+        start_year: 'Starting Year'
+        # 開始年份
+        start_month: 'Starting Month'
+        # 開始月份'
+        end_year: 'Ending Year'
+        # 結束年份
+        end_month: 'Ending Month'
+        # 結束年份
+        current: 'Until Present'
+        # 至今
+        description: 'Job Description'
+      user_education:
+        name: 'School Name'
+        department: 'Major'
+        # 主修科目
+        graduate_year: 'Graduation Year'
+        degree: 'Degree'
+      recommendation:
+        message: 'Letter of Reference'
+        # 推薦內容，應該可以省略內容
+        name: 'Reference'
+        # 感覺可以省略姓名
+        email: 'Email'
+      sudo_investigate:
+        interview_time: "面試時間"
+        evaluation: "評價"
+      sudo_investigate_commit:
+        message: "回饋訊息"
+      scripture:
+        name: 'Name'
+        # 『經文名稱』
+        language: 'Programming Language'
+      profile_comment:
+        message: 'Comment'
+        # 怎樣的註記內容，需要圖對照
+ enumerize:
+  apply_job_commits:
+    status:
+      apply: "Application Successful"
+      sudo_read: 'Read by Sudo'
+      sudo_interview: 'Sudo Interview'
+      to_company: "Send to company"
+      reject: "This job is not suitable for you, but there are still plenty more jobs to explore!"
+      # 這邊也想改成兩句
+      company_read: 'Read by company'
+      company_reject: 'This job is not suitable for you, but there are still plenty more jobs to explore!'
+      # 不確定實際顯示的畫面
+      company_interview: 'Company Interview'
+      interview_done: 'Pending Result'
+      # 等待結果: qualification pending 好像也可
+      interview_again: 'Reinterview'
+      get_offer: "Get Offer"
+  company:
+    state:
+      verify: 'Pending Verification'
+      # 審核中: Verifying
+      approve: 'Approved'
+      rejected: 'Rejected'
+      draft: 'Draft'
+    staff_count:
+      s1_10: "1-10"
+      s11_50: "11-50"
+      s51_200: "51-200"
+      s201_500: "201-500"
+      s501_1000: "501-1000"
+      s1001_5000: "1001-5000"
+      s5001_10000: "5001-10000"
+      s10000up: "10000+"
+      hidden_staff_count: "Undisclosed"
+    stage:
+      seed: "Seed"
+      angel: "Angel"
+      a: "Series A"
+      b: "Series B"
+      c: "Series C"
+      d: "Series D"
+      dup: "Above Series D"
+      # D輪以上
+      public_market: "IPO or OTC"
+      hidden: "Undisclosed"
+      no_requirement: "No Fundraising Requirement"
+    level:
+      fulltime_level: "Fulltime Account Access"
+      intern_level: "Internship Account Access"
+      super_level: "Premier Account Access"
+      # 完整權限
+    category:
+      not_select: 'Undisclosed'
+      mobile: 'Mobile Internet'
+      ec: 'E-Commerce'
+      life: 'Life'
+      # 生活服務
+      o2o: 'O2O'
+      culture: 'Creative Industry'
+      game: 'Games'
+      travel: 'Travel'
+      health: 'Healthcare'
+      education: 'Education'
+      financial: 'Banking and Insurance'
+      enterprise: 'Corporate Services'
+      # 企業服務
+      advertisement: 'Marketing and Advertising'
+      data: 'Data Analytics'
+      security: 'Information Security'
+      social: 'Social Media'
+      content: 'Content Media'
+      # 內容媒體: Digital Content 有沒有比較好?
+      iot: 'IOT'
+      tool: 'Tools & Software'
+      other: 'Others'
+    list:
+      not_select: 'Undisclosed'
+  interested_job:
+    frontend: 'Frontend Engineer'
+    backend: 'Backend Engineer'
+    android: 'Android'
+    ios: 'iOS'
+    pm: 'Project Manager'
+    ui: 'UI/UX'
+    sales: 'Sales'
+    marketing: 'Marketing'
+    fullstack: 'Full Stack Developer'
+    others: 'Others'
+  apply_job:
+    status:
+     resume_uncomplete: 'Incomplete Resume'
+     reject: 'This job is not suitable for you.'
+     # 資格不符
+     concat_uncomplete: 'Fill out contact information'
+     not_read: 'Pending Processing'
+     # 等待處理
+     sudo_interview: 'Processing Application'
+     company_interview: 'Pending Interview'
+     cancel: 'Cancel application'
+     # 將求職翻成申請
+     approve: 'Hiring Process'
+     done: 'Job Seeking Done'
+     # 完成求職，求職用 job seeking
+    status_message:
+     resume_uncomplete: 'Your resume is incomplete. Please go to "Edit Personal Resume" to complete it and show us the best of you!'
+     # 哦！您的履歷似乎不夠完整，點擊「編輯個人履歷」展現您不為人知的一面吧！
+     concat_uncomplete: "Application Successful. Don’t forget to complete more details in your contact info"
+     # 申請成功，您的聯絡資訊尚未完成"
+     not_read: "Application Successful"
+    user_status:
+      apply: 'Application Successful'
+      sudo_read: "ReadRead by Sudo"
+      sudo_interview: "Interview With Sudo "
+      # Sudo 面談
+      reject: "This job is not suitable for you, but there are still plenty more jobs to explore!"
+      # 不適合
+      to_company: 'Resume sent to company'
+      # 履歷送至公司
+      company_read: 'Read by company'
+      company_interview: 'Company Interview'
+      wait_result: 'Pending Result'
+      interview_again: 'Reinterview'
+      get_offer: "Get Offer"
+      take_offer: 'Accept Offer'
+      reject_offer: 'Reject Offer'
+    admin_status:
+      not_read: 'Unread'
+      todo: 'Pending Processing'
+      need_interview: 'Pending Interview'
+      # 待約面試, 想以還在約的 arranging 表示等待約
+      interview: 'Interview Scheduled'
+      sudo_reject: 'Rejected by Sudo'
+      # 確認一下顯示頁面
+      to_company: 'Resume sent to company'
+      company_read: 'Read by company'
+      company_need_interview: 'Help arrange interview'
+      # 幫約面試
+      company_interview: 'Interview Scheduled '
+      interview_feedback: 'Interview Feedback'
+      interview_again: 'Reinterview'
+      company_reject: "This job is not suitable for you, but there are still plenty more jobs to explore!"
+      get_offer: "Get Offer"
+      take_offer: 'Accept Offer'
+      reject_offer: 'Reject Offer'
+      archive: "Archive"
+    corp_status:
+      none: 'None'
+      not_read: 'Unread'
+      todo: 'Pending'
+      need_interview: 'Follow-up Interview'
+      interview: 'Scheduled'
+      interview_done: 'Interviewed'
+      interview_again: 'Reinterview'
+      reject: 'Rejected'
+      get_offer: "Give Offer"
+      # 給 offer，什麼時候會說給 offer?
+      take_offer: 'Accept Offer'
+      reject_offer: 'Decline Offer'
+  corp_user:
+    locale:
+      en: "English"
+      zh-TW: "中文"
+    status:
+      doing: Information is being filled'
+      # 資料填寫中，需確認網頁顯示
+      verify: 'Under Verification'
+      approve: 'Approved'
+      invited: 'Invited'
+  job:
+    experience:
+      unlimit: 'Unlimited'
+      student: 'Student'
+      graduated: 'Graduated this year'
+      one_yr: 'Less than 1 Year'
+      one_to_three: '1 to 3 Years'
+      three_to_five: '3 to 5 Years'
+      five_to_ten: '5 to 10 Years'
+      ten_up: 'Over 10 Years'
+    category:
+      frontend: 'Frontend Engineer'
+      backend: 'Backend Engineer'
+      android: 'Android Engineer'
+      ios: 'iOS Engineer'
+      pm: 'Project Manager'
+      ui: 'UI/UX'
+      sales: 'Sales'
+      marketing: 'Marketing'
+      others: 'Others'
+      fullstack: 'Full Stack Developer'
+    status:
+      close: 'Close'
+      publish: 'Open'
+    job_type:
+      hh: 'Headhunting'
+      intern: 'Internship'
+      general: 'Standard'
+      fulltime: 'Fulltime'
+      all: 'All'
+    categories_options:
+      development: 'Technical Development'
+      technical: 'Technical'
+      backend: 'Backend'
+      java: 'Java'
+      python: 'Python'
+      php: 'PHP'
+      c_sharp: 'C#'
+      cpp: 'C++'
+      go: 'Go'
+      perl: 'Perl'
+      j2ee: 'J2EE'
+      hadoop: 'Hadoop'
+      nodejs: 'Node.js'
+      rails: 'Rails'
+      dotnet: '.NET'
+      data_mining: 'Data Mining'
+      algorithm: 'Algorithm'
+      frontend: 'Frontend'
+      actionscript: 'ActionScript'
+      html5: 'HTML5'
+      javascript: 'JavaScript'
+      reactjs: 'React.js'
+      jquery: 'jQuery'
+      angularjs: 'Angular.js'
+      fullstack: 'Full Stack'
+      mobile: 'Mobile Development'
+      android: 'Android'
+      obj_c: 'Objective-C'
+      swift: 'Swift'
+      test: 'Test Engineer'
+      test_engineer: 'Test Engineer'
+      test_other: 'Others'
+      data: 'Data Analytics'
+      data_analytics: 'Data Analytics'
+      data_other: 'Others'
+      technical_high: 'Senior Position'
+      technical_manager: 'Technical Manager'
+      director_of_engineering: 'Director of Engineering'
+      architect: 'Architect'
+      cto: 'CTO'
+      security_engineer: 'Security Engineer'
+      technical_high_other: 'Others'
+      product_and_project: 'Product/Project'
+      product: 'Product Manager'
+      product_manager: 'Product Manager'
+      a_product_manager: 'Associate Product Manager'
+      product_other: 'Others'
+      project: 'Project Manager'
+      project_manager: 'Project Manager'
+      a_project_manager: 'Associate Project Manager'
+      project_other: 'Others'
+      pp_high: 'Senior Position'
+      senior_project_manager: 'Senior Project Manager'
+      senior_product_manager: 'Senior Product Manager'
+      pp_high_other: 'Others'
+      design: 'Design'
+      ui: 'UI Design'
+      web_ui_designer: 'Web UI Designer'
+      app_ui_designer: 'APP UI Designer'
+      senior_web_ui_designer: 'Senior Web UI Designer'
+      senior_app_ui_designer: 'Senior APP UI Designer'
+      ui_other: 'Others'
+      ux: 'UX Design'
+      ux_designer: 'UX Designer'
+      senior_ux_designer: 'Senior UX Designer'
+      ux_other: 'Others'
+      art: 'Graphic Design'
+      graphic_designer: 'Graphic Designer'
+      art_other: 'Others'
+      design_high: 'Senior Position'
+      director_of_design: 'Director of Design'
+      art_director: 'Art Director'
+      ux_director: 'UX Director'
+      ui_director: 'UI Director'
+      ui_lead: 'UI Lead'
+      ux_lead: 'UX Lead'
+      design_high_other: 'Others'
+      sales: 'Sales'
+      marketing: 'Marketing'
+      other: 'Others'
+    place:
+      taipei_city: Taipei City
+      new_taipei_city: New Taipei City
+      taoyuan_city: Taoyuan City
+      taichung_city: Taichung City
+      tainan_city: Tainan City
+      kaohsiung_city: Kaohsiung City
+      keelung_city: Keelung City
+      hsinchu_city: Hsinchu City
+      chiayi_city: Chiayi City
+      hsinchu_county: Hsinchu County
+      miaoli_county: Miaoli County
+      changhua_county: Changhua County
+      nantou_county: Nantou County
+      yunlin_county: Yunlin County
+      chiayi_county: Chiayi County
+      pingtung_county: Pingtung County
+      yilan_county: Yilan County
+      hualien_county: Hualien County
+      taitung_county: Taitung County
+      penghu_county: Penghu County
+      america: America
+      indonesia: Indonesia
+      malaysia: Malaysia
+      singapore: Singapore
+      thailand: Thailand
+      vietnam: Vietnam
+      china: China
+      japan: Japan
+      philippines: Philippines
+      other: Other
+      remote: Remote
+  intern_investigates:
+    user_status:
+      us_not_read: 'Applied'
+      us_readed: 'Read'
+      us_need_improve: 'Needs Modification'
+      us_improved: 'Modified'
+      us_interview: 'Pending Interview'
+    admin_status:
+      as_not_read: 'Unread'
+      as_todo: 'Pending Processing'
+      as_need_improve: 'Needs Modification'
+      as_improved: 'Modified'
+      as_need_interview: 'Interview Unscheduled'
+      as_interview: 'Interview Scheduled'
+      as_verify: 'Verified'
+    evaluation:
+      no_evaluation: 'Not Evaluated'
+      normal: 'Normal'
+      good: 'Good'
+  sudo_investigates:
+    user_status:
+      verifying: 審核中
+      need_improve: 需修改
+      interview: 已約面試
+      approve: 已審核
+      already_update: "已修改"
+    admin_status:
+      not_read: 未讀
+      todo: 待處理
+      need_improve: 需修改
+      already_update: "已修改"
+      improved: 已修改
+      need_interview: 待約面試
+      interview: 已約面試
+      approve: 已審核
+    evaluation:
+      no_evaluation: 尚未評價
+      normal: 普通
+      good: 優質
+  investigate_commits:
+    change_status:
+      not_read: 'Unread'
+      todo: 'Pending Processing'
+      need_improve: 'Needs Modification'
+      improved: 'Modified'
+      need_interview: 'Interview Unscheduled'
+      # 待約面試
+      interview: 'Interview Scheduled'
+      verify: 'Verified'
+  intern_apply_jobs:
+    corp_status:
+      all: 'All'
+      cs_not_verify: 'Not Verified'
+      cs_not_read: 'Unread'
+      cs_need_interview: 'Arrange An Interview'
+      cs_reject: 'Not suitable'
+      cs_todo: 'Pending Processing'
+      # 等待處理 --> 我用成未處理
+      cs_archive: 'Archive'
+    user_status:
+      us_not_read: 'Applied Successfully'
+      us_readed: 'Read'
+      us_reject: 'This job is not suitable for you, but there are still plenty more jobs to explore!'
+      us_archive: 'Archive'
+  job_referrals:
+    user_status:
+      alread_apply: "已投遞履歷"
+      get_offer: "申請獎勵"
+      award_apply: "申請受理中"
+      award_complete: "已領取"
+      apply_failed: 推薦失敗
+  beta_features:
+    feature:
+      job_referral: "邀請職缺"
